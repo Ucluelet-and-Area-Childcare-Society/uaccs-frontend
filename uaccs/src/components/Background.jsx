@@ -28,7 +28,7 @@ function createWatermark(key, x, y, rotation) {
 
 
 /* Background component for randomly layed out phrase as a watermark */
-function Background({children}) {
+function Background() {
     const elements = []
     const rows = 25
     const cols = 15
@@ -53,9 +53,8 @@ function Background({children}) {
 
 
     return (
-        <div className = "min-h-screen bg-[#F7F5F0] overflow-hidden ">
+        <div className = " min-h-screen bg-[#F7F5F0] overflow-hidden ">
             {elements}
-            {children}
         </div>
     );
 
