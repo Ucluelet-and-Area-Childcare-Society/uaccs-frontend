@@ -1,11 +1,11 @@
 
 
 /* Background component for randomly layed out phrase as a watermark */
-function Background({Children}) {
+function Background({children}) {
 
     return (
         <div className = "min-h-screen bg-[#F7F5F0] overflow-hidden ">
-            {Children}
+            {children}
         </div>
     )
 
