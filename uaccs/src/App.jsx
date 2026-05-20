@@ -3,6 +3,7 @@ import './index.css'
 import Background from './components/Background'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import NavigationSidebar from './components/NavigationSidebar'
 
 function App() {
     const [isNavOpen, setIsNavOpen] = useState(false);
