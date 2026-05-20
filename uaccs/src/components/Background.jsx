@@ -53,7 +53,7 @@ function Background() {
 
 
     return (
-        <div className = " min-h-screen bg-[#F7F5F0] overflow-hidden ">
+        <div className = " fixed inset-0 pointer-events-none z-0 bg-[#F7F5F0] overflow-hidden ">
             {elements}
         </div>
     );
