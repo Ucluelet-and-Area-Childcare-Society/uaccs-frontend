@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
    <div className = "h-screen w-full flex flex-col overflow-hidden">
