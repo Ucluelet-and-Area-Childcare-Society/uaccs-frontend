@@ -24,7 +24,7 @@ function NavigationSidebar({isOpen, onClose}) {
         shadow-[-8px_0_24px_rgba(0,0,0,0.3)] shadow-black/30`}>
 
             <div className = 'flex justify-between items-center border-b-2 border-[#C9B896] bg-linear-to-b from-[#2C3D28] from-0% to-[#253324] to-100%'>
-                <div className='tracking-wider text-[32px] font-dancing text-[#C9B896] font-[300]'>
+                <div className='tracking-wider text-[32px] font-dancing text-[#C9B896] font-light'>
                     Menu
                 </div>
             </div>
