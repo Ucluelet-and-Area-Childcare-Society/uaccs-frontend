@@ -8,9 +8,9 @@ function App() {
     const [count, setCount] = useState(0);
 
   return (
-   <div>
-    <Header/>
+   <div className = "h-screen w-full flex flex-col overflow-hidden">
     <Background/>
+    <Header/>
     <Footer/>
    </div>
   )
