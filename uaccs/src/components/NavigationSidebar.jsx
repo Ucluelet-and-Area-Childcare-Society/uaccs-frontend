@@ -23,6 +23,12 @@ function NavigationSidebar({isOpen, onClose}) {
         right-0 h-full bg-[#2C3D28] w-96 z-50 transition duration-300 ease-in-out border-l-4 border-solid border-[#C9B896]
         shadow-[-8px_0_24px_rgba(0,0,0,0.3)] shadow-black/30`}>
 
+            <div className = 'flex justify-between items-center border-b-2 border-[#C9B896] bg-linear-to-b from-[#2C3D28] from-0% to-[#253324] to-100%'>
+                <div>
+                    
+                </div>
+            </div>
+
         </div>
         </>
     )
