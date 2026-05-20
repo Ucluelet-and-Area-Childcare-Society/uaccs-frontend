@@ -1,7 +1,7 @@
 @import url('https://googleapis.com');
 @import "tailwindcss";
 
-
+/* Dancing script font theme */
 @theme {
     --font-dancing: "Dancing Script", cursive;
 }
