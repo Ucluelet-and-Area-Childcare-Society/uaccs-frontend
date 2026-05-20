@@ -12,7 +12,7 @@ function App() {
    <div className = "h-screen w-full flex flex-col overflow-hidden">
     <Background/>
     <Header setNavStatus = {setIsNavOpen}/>
-    <NavigationSidebar isOpen = {isNavOpen}/>
+    <NavigationSidebar isOpen = {isNavOpen} onClose = {() => setIsNavOpen(false)}/>
     <Footer/>
    </div>
   )
