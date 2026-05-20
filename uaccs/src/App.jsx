@@ -6,7 +6,7 @@ import Header from './components/Header'
 import NavigationSidebar from './components/NavigationSidebar'
 
 function App() {
-    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false); // setting NavBar to closed initially
 
   return (
    <div className = "h-screen w-full flex flex-col overflow-hidden">
