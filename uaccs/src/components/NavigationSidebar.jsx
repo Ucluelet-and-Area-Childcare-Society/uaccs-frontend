@@ -16,7 +16,7 @@ function NavigationSidebar({isOpen, onClose}) {
     
     return (
         <>
-        <div className = {} onClick = {onClose}/>
+        <div className = {`fixed inset-0 bg-black z-40 ${isOpen ? "opacity-40" : "opacity-0 pointer-events-none"}`} onClick = {onClose}/>
 
         <div 
         className={`${isOpen ? "translate-x-0" : "translate-x-full"} fixed top-0 
