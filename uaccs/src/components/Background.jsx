@@ -32,7 +32,6 @@ function Background({children}) {
     const elements = []
     const rows = 25
     const cols = 15
-
     let key = 0
 
     // randomize element position within its own grid cell to reduce overlap
@@ -51,7 +50,6 @@ function Background({children}) {
         }
 
     }
-
 
 
     return (
