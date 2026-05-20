@@ -38,7 +38,8 @@ function Background({children}) {
     // randomize element position within its own grid cell to reduce overlap
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
-            const x = Math.random;
+            // x and y coordinate should be within its own grid position
+            const x = 
             const y = 
             const rotation = Math.floor((Math.random() * 60) - 30) // -30 -- 30 degrees;
 
