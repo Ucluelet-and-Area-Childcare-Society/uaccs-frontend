@@ -6,10 +6,9 @@ function createWatermark(key, x, y, rotation) {
     return (
         <div
         key = {key}
-        className = "absolute pointer-events-none overflow-hidden z-0"
+        className = "font-dancing absolute pointer-events-none overflow-hidden z-0"
         style = {{
-            fontFamily: 'Dancing Script, cursive',
-            fontWeight: 300,
+            fontWeight: 400,
             fontSize: "14px",
             color: "#D4C5A9",
             opacity: 0.35,
@@ -30,21 +29,25 @@ function createWatermark(key, x, y, rotation) {
 
 /* Background component for randomly layed out phrase as a watermark */
 function Background({children}) {
-    const elements = [];
-    const rows = 15;
-    const cols = 12;
-    let key = 0;
+    const elements = []
+    const rows = 25
+    const cols = 15
+
+    let key = 0
 
     // randomize element position within its own grid cell to reduce overlap
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
-            // x and y coordinate should be within its own grid position
-            const x = 
-            const y = 
-            const rotation = Math.floor((Math.random() * 60) - 30) // -30 -- 30 degrees;
+            const xStart = (j / cols) * 100
+            const yStart = (i / rows) * 100
 
-            elements.push(createWatermark(key, x, y, rotation));
-            key++;
+            // x and y coordinate should be within its own grid position
+            const x = xStart + (Math.random() * (100 / cols))
+            const y = yStart + (Math.random() * (100 / rows))
+            const rotation = Math.floor((Math.random() * 40) - 20) // -20 to 20 degrees;
+
+            elements.push(createWatermark(key, x, y, rotation))
+            key++
         }
 
     }
