@@ -2,17 +2,22 @@
 const phrase = "$10 per day";
 
 /* Returns a div with the specified coordinates and layout*/
-function createWatermark(i, x, y, rotation) {
+function createWatermark(key, x, y, rotation) {
     return (
         <div
-        key = {i}
-        className = "fixed pointer-events-none overflow-hidden z-0"
+        key = {key}
+        className = "absolute pointer-events-none overflow-hidden z-0"
         style = {{
             fontFamily: 'Dancing Script, cursive',
-            fontWeight: 600,
-            fontSize: "13px",
+            fontWeight: 300,
+            fontSize: "14px",
             color: "#D4C5A9",
-            opacity: 0.35
+            opacity: 0.35,
+            position: 'absolute',
+            top: `${y}%`,
+            left: `${x}%`,
+            transform: `rotate(${rotation}deg)`,
+            whiteSpace: "nowrap",
         }}
         >
             {phrase}
@@ -23,19 +28,23 @@ function createWatermark(i, x, y, rotation) {
 }
 
 
-
 /* Background component for randomly layed out phrase as a watermark */
 function Background({children}) {
-    const elements = []
+    const elements = [];
+    const rows = 15;
+    const cols = 12;
+    let key = 0;
 
-    for (let i = 0; i < 150; i++) {
-        const x = Math.floor(Math.random() * window.innerWidth);
-        const y = Math.floor(Math.random() * window.innerHeight);
-        const rotation = Math.floor((Math.random() * 60) - 30); // -30 -- 30 degrees
-        
-        elements.push(createWatermark(i, x, y, rotation));
+    // randomize element position within its own grid cell to reduce overlap
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            const x = Math.random;
+            const y = 
+            const rotation = Math.floor((Math.random() * 60) - 30) // -30 -- 30 degrees;
 
-
+            elements.push(createWatermark(key, x, y, rotation));
+            key++;
+        }
 
     }
 
@@ -43,6 +52,7 @@ function Background({children}) {
 
     return (
         <div className = "min-h-screen bg-[#F7F5F0] overflow-hidden ">
+            {elements}
             {children}
         </div>
     );
