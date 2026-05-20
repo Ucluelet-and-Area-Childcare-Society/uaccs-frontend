@@ -17,7 +17,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <button className='text-white'>
+            <button className='text-white hover:opacity-70 hover:translate-y-1 hover:scale-120 transition delay-150 duration-300 ease-in-out '>
                 <Menu size = {32}/>
             </button>
 
