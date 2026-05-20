@@ -1,6 +1,6 @@
 
 
-function NavigationSidebar() {
+function NavigationSidebar({isOpen}) {
 
 }
 
