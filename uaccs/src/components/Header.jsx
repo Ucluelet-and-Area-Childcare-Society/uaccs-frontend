@@ -9,7 +9,7 @@ function Header() {
             <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16"/>
             <div>
                 <div>
-                    Ucluelet and Area
+                    Ucluelet &amp; Area
                 </div>
                 <div>
                     Childcare Society
