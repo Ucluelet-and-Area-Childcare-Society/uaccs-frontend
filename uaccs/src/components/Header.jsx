@@ -6,7 +6,7 @@ function Header({setNavStatus}) {
 
     return (
         <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-[#2C3D28] border-b-3 border-[#1F2B1C] justify-between">
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center gap-3 select-none'>
                 <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16"/>
                 <div className='tracking-wider'>
                     <div className='text-[18px] text-white font-bold'>
