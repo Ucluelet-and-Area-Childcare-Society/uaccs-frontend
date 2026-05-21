@@ -20,11 +20,11 @@ function NavigationSidebar({isOpen, onClose}) {
 
         <div 
         className={`${isOpen ? "translate-x-0" : "translate-x-full"} fixed top-0 
-        right-0 h-full bg-[#C4D65E] w-96 z-50 transition duration-300 ease-in-out border-l-4 border-solid border-[#849236]
+        right-0 h-full bg-[#4A8A9A] w-96 z-50 transition duration-300 ease-in-out border-l-4 border-solid border-[#3A6A77]
         shadow-[-8px_0_24px_rgba(0,0,0,0.3)] shadow-black/30`}>
 
-            <div className = 'flex justify-between items-center border-b-2 border-[#C9B896] bg-linear-to-b from-[#2C3D28] from-0% to-[#253324] to-100%'>
-                <div className='tracking-wider text-[32px] font-dancing text-[#C9B896] font-light'>
+            <div className = 'flex justify-between items-center border-b-2 border-[#849236] bg-linear-to-b from-[#C4D65E] from-0% to-[#9AAA44] to-100%'>
+                <div className='tracking-wider text-[32px] font-dancing text-white font-light'>
                     Menu
                 </div>
                 <button onClick = {onClose}>
