@@ -5,7 +5,7 @@ import Umbrella from '../assets/umbrella-logo.svg'
 function Header({setNavStatus}) {
 
     return (
-        <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-[#5BA4B5] border-b-3 border-[#3A6A77] justify-between">
+        <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-[#4A8A9A] border-b-3 border-[#3A6A77] justify-between">
             <div className='flex items-center gap-3 select-none'>
                 <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16"/>
                 <div className='tracking-wider'>
