@@ -20,15 +20,15 @@ function NavigationSidebar({isOpen, onClose}) {
 
         <div 
         className={`${isOpen ? "translate-x-0" : "translate-x-full"} fixed top-0 
-        right-0 h-full bg-[#4A8A9A] w-96 z-50 transition duration-300 ease-in-out border-l-4 border-solid border-[#3A6A77]
+        right-0 h-full bg-[#1E3A5A] w-96 z-50 transition duration-300 ease-in-out border-l-4 border-solid border-white/10
         shadow-[-8px_0_24px_rgba(0,0,0,0.3)] shadow-black/30`}>
 
-            <div className = 'flex justify-between items-center border-b-2 border-[#849236] bg-linear-to-b from-[#C4D65E] from-0% to-[#9AAA44] to-100% p-4'>
-                <div className='tracking-wider text-[32px] font-dancing text-white font-light'>
+            <div className = 'flex justify-between items-center border-b-2 bg-[#D35400] border-[#416252] p-7'>
+                <div className='tracking-wider text-[32px] font-dancing text-[#EAE6DF] font-light'>
                     Menu
                 </div>
-                <button onClick = {onClose} className = "transition-all p-2 rounded-sm ">
-                    <X size = {42} strokeWidth = {1.5} color = 'white'/>
+                <button onClick = {onClose} className = "text-white transition-all p-2 rounded-md border-2 border-white hover:rotate-90">
+                    <X size = {32} strokeWidth = {2} />
                 </button>
             </div>
 
