@@ -30,6 +30,7 @@ function createWatermark(key, x, y, rotation) {
 /* Background component for randomly layed out phrase as a watermark */
 function Background() {
     const elements = []
+    const colors = ['#5BA4B5', '#C4D65E', '#E8A562']
     const rows = 25
     const cols = 15
     let key = 0
