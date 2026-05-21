@@ -45,7 +45,7 @@ function Background() {
             const x = xStart + (Math.random() * (100 / cols))
             const y = yStart + (Math.random() * (100 / rows))
             const rotation = Math.floor((Math.random() * 40) - 20) // -20 to 20 degrees;
-            const color = 
+            const color = colors[Math.floor(Math.random() * colors.length)]
 
             elements.push(createWatermark(key, x, y, rotation, color))
             key++
@@ -55,7 +55,7 @@ function Background() {
 
 
     return (
-        <div className = "fixed inset-0 pointer-events-none z-0 bg-[#F7F5F0] overflow-hidden ">
+        <div className = "fixed inset-0 pointer-events-none z-0 bg-[#F5F9FA] overflow-hidden ">
             {elements}
         </div>
     );
