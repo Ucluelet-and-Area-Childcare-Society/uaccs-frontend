@@ -1,5 +1,5 @@
 import {Menu} from 'lucide-react'
-import Umbrella from '../assets/umbrella-logo.svg'
+import Umbrella from '../assets/logo.svg'
 
 /* Header component for Logo, Company Name, Navigation Menu Button */
 function Header({setNavStatus}) {
