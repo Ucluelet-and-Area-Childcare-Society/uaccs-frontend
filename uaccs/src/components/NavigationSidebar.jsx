@@ -23,12 +23,12 @@ function NavigationSidebar({isOpen, onClose}) {
         right-0 h-full bg-[#4A8A9A] w-96 z-50 transition duration-300 ease-in-out border-l-4 border-solid border-[#3A6A77]
         shadow-[-8px_0_24px_rgba(0,0,0,0.3)] shadow-black/30`}>
 
-            <div className = 'flex justify-between items-center border-b-2 border-[#849236] bg-linear-to-b from-[#C4D65E] from-0% to-[#9AAA44] to-100%'>
+            <div className = 'flex justify-between items-center border-b-2 border-[#849236] bg-linear-to-b from-[#C4D65E] from-0% to-[#9AAA44] to-100% p-4'>
                 <div className='tracking-wider text-[32px] font-dancing text-white font-light'>
                     Menu
                 </div>
-                <button onClick = {onClose}>
-                    <X size = {28} strokeWidth = {2.5}/>
+                <button onClick = {onClose} className = "transition-all p-2 rounded-sm ">
+                    <X size = {42} strokeWidth = {1.5} color = 'white'/>
                 </button>
             </div>
 
