@@ -2,7 +2,7 @@
 const phrase = "$10 per day";
 
 /* Returns a div with the specified coordinates and layout*/
-function createWatermark(key, x, y, rotation) {
+function createWatermark(key, x, y, rotation, color) {
     return (
         <div
         key = {key}
@@ -10,7 +10,7 @@ function createWatermark(key, x, y, rotation) {
         style = {{
             fontWeight: 400,
             fontSize: "14px",
-            color: "#D4C5A9",
+            color: color,
             opacity: 0.35,
             position: 'absolute',
             top: `${y}%`,
@@ -45,8 +45,9 @@ function Background() {
             const x = xStart + (Math.random() * (100 / cols))
             const y = yStart + (Math.random() * (100 / rows))
             const rotation = Math.floor((Math.random() * 40) - 20) // -20 to 20 degrees;
+            const color = 
 
-            elements.push(createWatermark(key, x, y, rotation))
+            elements.push(createWatermark(key, x, y, rotation, color))
             key++
         }
 
