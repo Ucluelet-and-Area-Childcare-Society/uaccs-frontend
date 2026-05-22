@@ -6,11 +6,11 @@ import {Info, Users, Phone, Heart, Book} from 'lucide-react'
 function Header() {
 
     const navLinks = [
-        { to: "/about", label: "About" },
-        { to: "/programs", label: "Programs" },
-        { to: "/resources", label: "Resources" },
-        { to: "/GetInvolved", label: "Get Involved" },
-        { to: "/contact", label: "Contact" },
+        { to: "/about", label: "About", icon: Info },
+        { to: "/programs", label: "Programs", icon: Users },
+        { to: "/resources", label: "Resources", icon: Book },
+        { to: "/GetInvolved", label: "Get Involved", icon: Heart },
+        { to: "/contact", label: "Contact", icon: Phone },
     ]
 
     return (
