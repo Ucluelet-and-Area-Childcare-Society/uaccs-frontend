@@ -13,7 +13,6 @@ import GetInvolved from './pages/GetInvolved'
 import Resources from './pages/Resources'
 
 function App() {
-    const [isNavOpen, setIsNavOpen] = useState(false); // setting NavBar to closed initially
 
   return (
    <div className = "h-screen w-full flex flex-col overflow-hidden">
