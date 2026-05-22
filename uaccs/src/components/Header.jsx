@@ -28,7 +28,7 @@ function Header() {
             </div>
             <nav className = "flex items-center gap-5 text-white">
                 {navLinks.map((link) => (
-                    <NavLink key = {link.to} to = {link.to} className = ''> {link.label} </NavLink>
+                    <NavLink key = {link.to} to = {link.to} className = 'transition-all duration-300 ease-in-out hover:text-[#C4D65E]'> {link.label} </NavLink>
                 ))}
                 <NavLink to = "/waitlist" className = 'bg-[#E8A562] p-2 rounded-md'> Waitlist </NavLink>
             </nav>
