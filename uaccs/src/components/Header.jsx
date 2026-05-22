@@ -4,6 +4,15 @@ import {NavLink} from 'react-router'
 /* Header component for Logo, Company Name, Navigation Menu Button */
 function Header() {
 
+    const navLinks = [
+        { to: "/about", label: "About" },
+        { to: "/programs", label: "Programs" },
+        { to: "/resources", label: "Resources" },
+        { to: "/GetInvolved", label: "Get Involved" },
+        { to: "/contact", label: "Contact" },
+        { to: "/waitlist", label: "Waitlist" },
+    ]
+
     return (
         <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-[#4A8A9A] border-b-3 border-[#3A6A77] justify-between">
             <div className='flex items-center gap-3 select-none'>
@@ -17,7 +26,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <nav>
+            <nav className = "flex items-center gap-5">
                 <NavLink to = "/about"> About </NavLink>
                 <NavLink to = "/programs"> Programs </NavLink>
                 <NavLink to = "/resources"> Resources </NavLink>
