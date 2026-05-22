@@ -7,6 +7,7 @@ import {Routes, Route} from 'react-router'
 import Home from './pages/Home'
 import Programs from './pages/Programs'
 import Waitlist from './pages/Waitlist'
+import Contact from './pages/Contact'
 
 function App() {
     const [isNavOpen, setIsNavOpen] = useState(false); // setting NavBar to closed initially
@@ -19,7 +20,8 @@ function App() {
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/programs" element = {<Programs/>}/>
         <Route path = "/waitlist" element = {<Waitlist/>}/>
-        
+        <Route path = "/contact" element = {<Contact/>}/>
+
 
 
     </Routes>
