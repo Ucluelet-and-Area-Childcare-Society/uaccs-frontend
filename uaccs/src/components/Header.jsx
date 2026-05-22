@@ -1,5 +1,6 @@
 import Umbrella from '../assets/umbrella-logo.svg'
 import {NavLink} from 'react-router'
+import {Info, Users, Phone, Heart, Book} from 'lucide-react'
 
 /* Header component for Logo, Company Name, Navigation Menu Button */
 function Header() {
