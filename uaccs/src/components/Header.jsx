@@ -10,7 +10,6 @@ function Header() {
         { to: "/resources", label: "Resources" },
         { to: "/GetInvolved", label: "Get Involved" },
         { to: "/contact", label: "Contact" },
-        { to: "/waitlist", label: "Waitlist" },
     ]
 
     return (
@@ -26,11 +25,11 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <nav className = "flex items-center gap-5">
+            <nav className = "flex items-center gap-5 text-white">
                 {navLinks.map((link) => (
-                    <NavLink key = {link.to} to = {link.to}> {link.label} </NavLink>
+                    <NavLink key = {link.to} to = {link.to} className = ''> {link.label} </NavLink>
                 ))}
-                
+                <NavLink to = "/waitlist" className = 'bg-[#E8A562] p-2 rounded-md'> Waitlist </NavLink>
             </nav>
 
         </header>
