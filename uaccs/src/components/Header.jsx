@@ -27,12 +27,9 @@ function Header() {
                 </div>
             </div>
             <nav className = "flex items-center gap-5">
-                <NavLink to = "/about"> About </NavLink>
-                <NavLink to = "/programs"> Programs </NavLink>
-                <NavLink to = "/resources"> Resources </NavLink>
-                <NavLink to = "/GetInvolved"> Get Involved </NavLink>
-                <NavLink to = "/contact"> Contact </NavLink>
-                <NavLink to = "/waitlist"> Waitlist </NavLink>
+                {navLinks.map((link) => (
+                    <NavLink key = {link.to} to = {link.to}> {link.label} </NavLink>
+                ))}
                 
             </nav>
 
