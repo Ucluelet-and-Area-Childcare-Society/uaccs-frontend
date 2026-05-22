@@ -6,6 +6,7 @@ import Header from './components/Header'
 import {Routes, Route} from 'react-router'
 import Home from './pages/Home'
 import Programs from './pages/Programs'
+import Waitlist from './pages/Waitlist'
 
 function App() {
     const [isNavOpen, setIsNavOpen] = useState(false); // setting NavBar to closed initially
@@ -17,6 +18,9 @@ function App() {
     <Routes>
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/programs" element = {<Programs/>}/>
+        <Route path = "/waitlist" element = {<Waitlist/>}/>
+        
+
 
     </Routes>
     <Footer/>
