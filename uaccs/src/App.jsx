@@ -17,7 +17,7 @@ function App() {
   return (
    <div className = "h-screen w-full flex flex-col overflow-hidden">
     <Background/>
-    <Header setNavStatus = {setIsNavOpen}/>
+    <Header/>
     <Routes>
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/programs" element = {<Programs/>}/>
