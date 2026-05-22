@@ -1,5 +1,6 @@
 import {Menu} from 'lucide-react'
 import Umbrella from '../assets/umbrella-logo.svg'
+import {NavLink} from 'react-router'
 
 /* Header component for Logo, Company Name, Navigation Menu Button */
 function Header() {
@@ -17,7 +18,6 @@ function Header() {
                     </div>
                 </div>
             </div>
-
 
         </header>
     )
