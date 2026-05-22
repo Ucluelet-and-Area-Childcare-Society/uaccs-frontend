@@ -10,7 +10,7 @@ function Header({setNavStatus}) {
                 <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16"/>
                 <div className='tracking-wider'>
                     <div className='text-[18px] text-white font-bold'>
-                        UCLELET &amp; AREA
+                        UCLUELET &amp; AREA
                     </div>
                     <div className='text-[11px] text-[#C4D65E] font-semibold'>
                         CHILDCARE SOCIETY
