@@ -8,6 +8,9 @@ import Home from './pages/Home'
 import Programs from './pages/Programs'
 import Waitlist from './pages/Waitlist'
 import Contact from './pages/Contact'
+import About from './pages/About'
+import GetInvolved from './pages/GetInvolved'
+import Resources from './pages/Resources'
 
 function App() {
     const [isNavOpen, setIsNavOpen] = useState(false); // setting NavBar to closed initially
@@ -21,9 +24,9 @@ function App() {
         <Route path = "/programs" element = {<Programs/>}/>
         <Route path = "/waitlist" element = {<Waitlist/>}/>
         <Route path = "/contact" element = {<Contact/>}/>
-
-
-
+        <Route path = "/about" element = {<About/>}/>
+        <Route path = "/get-involved" element = {<GetInvolved/>}/>
+        <Route path = "/resources" element = {<Resources/>}/>
     </Routes>
     <Footer/>
    </div>
