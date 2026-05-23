@@ -11,6 +11,12 @@ function Header() {
         { to: "/contact", label: "Contact"},
     ]
 
+    const aboutLinks = [
+        {label: "Who We Are", to: "/who-we-are"},
+        {label: "Meet Our Staff", to: "/meet-our-staff"},
+        {label: "Meet Our Board of Directors", to: "/meet-our-bod"}
+    ]
+
     return (
         <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-[#4A8A9A] border-b-3 border-[#3A6A77] justify-between">
             <div className='flex items-center gap-3 select-none'>
