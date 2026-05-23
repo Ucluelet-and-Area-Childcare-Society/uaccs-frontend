@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import Programs from './pages/Programs'
 import Waitlist from './pages/Waitlist'
 import Contact from './pages/Contact'
-import About from './pages/About'
+import About from './pages/about/About'
 import GetInvolved from './pages/GetInvolved'
 import Resources from './pages/Resources'
 
