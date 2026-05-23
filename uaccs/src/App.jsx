@@ -26,16 +26,22 @@ function App() {
         <Route path = "/programs" element = {<Programs/>}/>
         <Route path = "/waitlist" element = {<Waitlist/>}/>
         <Route path = "/contact" element = {<Contact/>}/>
-        <Route path = "/about" element = {<About/>}/>
+
+        <Route path = "/about" element = {<About/>}>
             <Route path = "who-we-are" element = {<WhoWeAre/>}/>
             <Route path = "meet-our-staff" element = {<MeetOurStaff/>}/>
             <Route path = "meet-our-bod" element = {<MeetOurBod/>}/>
+        </Route>
+        
         <Route path = "/get-involved" element = {<GetInvolved/>}/>
         <Route path = "/resources" element = {<Resources/>}/>
+
     </Routes>
     <Footer/>
    </div>
   )
 }
+
+
 
 export default App
