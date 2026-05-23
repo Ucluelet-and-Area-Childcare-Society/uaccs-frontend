@@ -4,4 +4,7 @@
 /* Dancing script font theme */
 @theme {
     --font-dancing: "Dancing Script", cursive;
+    --color-uaccs_green: [#C4D65E];
+    --color-uaccs_blue: [#4A8A9A];
+    --color-uaccs_orange: [#E8A562];
 }
