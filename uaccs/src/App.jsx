@@ -11,6 +11,9 @@ import Contact from './pages/Contact'
 import About from './pages/about/About'
 import GetInvolved from './pages/GetInvolved'
 import Resources from './pages/Resources'
+import WhoWeAre from './pages/about/WhoWeAre'
+import MeetOurStaff from './pages/about/MeetOurStaff'
+import MeetOurBod from './pages/about/MeetOurBod'
 
 function App() {
 
