@@ -7,7 +7,10 @@ function DropdownMenu({label, items}) {
 
     return (
         <Menu.Root>
-
+            <Menu.Trigger openOnHover className = "flex items-center gap-1 hover:text-[#C4D65E]">
+                {label}
+                <ChevronDown size={18}/>
+            </Menu.Trigger>
 
 
         </Menu.Root>
