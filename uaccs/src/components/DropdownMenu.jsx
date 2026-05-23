@@ -1,7 +1,23 @@
 import {Menu, Button} from '@mantine/core'
+import {NavLink} from 'react-router'
 
 /* DropdownMenu component, takes in a label & array of dropdown items */
-function DropdownMenu() {
+function DropdownMenu({label, items}) {
+
+    return (
+        <Menu shadow = "md" width = {200}>
+            <Menu.Target>
+                <Button>{label}</Button>
+            </Menu.Target>
+
+            <Menu.Dropdown>
+
+
+
+
+            </Menu.Dropdown>
+        </Menu>
+    )
 
 }
 
