@@ -1,5 +1,5 @@
-import {Menu, Button} from '@mantine/core'
-import {NavLink} from 'react-router'
+import {Menu, Button, Anchor} from '@mantine/core'
+import {Link} from 'react-router-dom'
 
 /* DropdownMenu component, takes in a label & array of dropdown items */
 function DropdownMenu({label, items}) {
@@ -12,9 +12,10 @@ function DropdownMenu({label, items}) {
             </Menu.Target>
 
             <Menu.Dropdown>
-                {items.map((item) => (
-                    <Menu.Item key = {item.to} component = {NavLink} to = {item.to} >{item.label}</Menu.Item>
+                {items.map(item => (
+                    <Menu.Item component = {Link} to = {item.to} > {item.label} </Menu.Item>
                 ))}
+                
             </Menu.Dropdown>
 
         </Menu>
