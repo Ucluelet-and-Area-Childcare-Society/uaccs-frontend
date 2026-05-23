@@ -1,5 +1,6 @@
 @import url('https://googleapis.com');
 @import "tailwindcss";
+@import '@mantine/core/styles.css';
 
 /* Dancing script font theme */
 @theme {
