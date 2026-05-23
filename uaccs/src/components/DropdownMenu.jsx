@@ -6,16 +6,17 @@ function DropdownMenu({label, items}) {
 
     return (
         <Menu shadow = "md" width = {200}>
+            
             <Menu.Target>
                 <Button>{label}</Button>
             </Menu.Target>
 
             <Menu.Dropdown>
-
-
-
-
+                {items.map((item) => (
+                    <Menu.item key = {item.to} component = {NavLink} to = {item.to} >{item.label}</Menu.item>
+                ))}
             </Menu.Dropdown>
+
         </Menu>
     )
 
