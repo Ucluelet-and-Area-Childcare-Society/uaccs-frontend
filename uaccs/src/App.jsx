@@ -24,6 +24,7 @@ function App() {
         <Route path = "/waitlist" element = {<Waitlist/>}/>
         <Route path = "/contact" element = {<Contact/>}/>
         <Route path = "/about" element = {<About/>}/>
+            <Route path =>
         <Route path = "/get-involved" element = {<GetInvolved/>}/>
         <Route path = "/resources" element = {<Resources/>}/>
     </Routes>
