@@ -1,4 +1,3 @@
-
 import {NavLink} from 'react-router-dom'
 
 /* DropdownMenu component, takes in a label & array of dropdown items */
