@@ -12,9 +12,9 @@ function Header() {
     ]
 
     const aboutLinks = [
-        {label: "Who We Are", to: "/who-we-are"},
-        {label: "Meet Our Staff", to: "/meet-our-staff"},
-        {label: "Meet Our Board of Directors", to: "/meet-our-bod"}
+        {label: "Who We Are", to: "/about/who-we-are"},
+        {label: "Meet Our Staff", to: "/about/meet-our-staff"},
+        {label: "Meet Our Board of Directors", to: "/about/meet-our-bod"}
     ]
 
     return (
