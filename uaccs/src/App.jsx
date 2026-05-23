@@ -27,7 +27,9 @@ function App() {
         <Route path = "/waitlist" element = {<Waitlist/>}/>
         <Route path = "/contact" element = {<Contact/>}/>
         <Route path = "/about" element = {<About/>}/>
-            <Route path =>
+            <Route path = "who-we-are" element = {<WhoWeAre/>}/>
+            <Route path = "meet-our-staff" element = {<MeetOurStaff/>}/>
+            <Route path = "meet-our-bod" element = {<MeetOurBod/>}/>
         <Route path = "/get-involved" element = {<GetInvolved/>}/>
         <Route path = "/resources" element = {<Resources/>}/>
     </Routes>
