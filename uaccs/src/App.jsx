@@ -3,7 +3,7 @@ import './index.css'
 import Background from './components/Background'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import {Routes, Route} from 'react-router'
+import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
 import Programs from './pages/Programs'
 import Waitlist from './pages/Waitlist'
@@ -32,7 +32,7 @@ function App() {
             <Route path = "meet-our-staff" element = {<MeetOurStaff/>}/>
             <Route path = "meet-our-bod" element = {<MeetOurBod/>}/>
         </Route>
-        
+
         <Route path = "/get-involved" element = {<GetInvolved/>}/>
         <Route path = "/resources" element = {<Resources/>}/>
 

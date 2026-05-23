@@ -1,5 +1,5 @@
 import Umbrella from '../assets/umbrella-logo.svg'
-import {NavLink} from 'react-router'
+import {NavLink} from 'react-router-dom'
 import DropdownMenu from './DropdownMenu'
 
 /* Header component for Logo, Company Name, Navigation Menu Button */
@@ -31,7 +31,7 @@ function Header() {
                 </div>
             </div>
             <nav className = "flex items-center gap-5 text-white">
-                <DropdownMenu label = "About" items = {aboutLinks}/>
+
                 {navLinks.map((link) => (
                     <NavLink key = {link.to} to = {link.to} className = 'transition-all duration-300 ease-in-out hover:text-[#C4D65E] hover:-translate-y-1'> {link.label} </NavLink>
                 ))}
