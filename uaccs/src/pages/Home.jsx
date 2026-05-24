@@ -62,26 +62,22 @@ function Home() {
                 </NavLink>
             </div>
         </div>
-
-
         <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
-            <div className = "bg-white h-64 border-6 border-[#5BA4B5] shadow-custom_shadow shadow-uaccs_blue text-[#5BA4B5] py-5">
-                Ucluelet Children's Centre
-            </div>
-            <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E] text-uaccs_green py-5 flex flex-col items-center justify-between">
-                Little Beans Infant Toddler Centre
-                <Shapes size = {36} />
+          {programs.map((program, index) => {
+
+            const Icon = program.icon
+            return (
+                <div 
+                key = {index} 
+                className = {`bg-white h-64 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between ${program.borderColor} ${program.textColor} ${program.shadowColor}`}>
+                {program.title}
+                <Icon size = {36} />
                 <div className = "text-gray-700 font-extralight text-[18px] font-serif">
-                    Ages: 0 - 36 months
+                    {program.ages}
                 </div>
-            </div>
-            <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350] text-uaccs_orange py-5 flex flex-col items-center justify-between">
-                After-school Care
-                <School size = {36}/>
-                <div className = "text-gray-700 font-extralight text-[18px] font-serif">
-                    Ages: 5 - 12
                 </div>
-            </div>
+            )
+          })}  
         </div>  
        </div>
     )
