@@ -19,7 +19,7 @@ function Home() {
             ages: "Ages: 0 - 36 months",
             textColor: "text-uaccs_green ",
             borderColor: "border-uaccs_green",
-            shadowColor: "shadow=[#A8BA4E]"
+            shadowColor: "shadow-[#A8BA4E]"
         },
         {
             title: "After-school Care",
