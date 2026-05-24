@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom'
-import {ArrowRight, School, Shapes} from 'lucide-react'
+import {ArrowRight, School, Shapes, Backpack} from 'lucide-react'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
     const programs = [
         {
             title: "Ucluelet Children's Centre",
-            icon: Shapes,
+            icon: Backpack,
             ages: "Ages: x - y",
             textColor: "text-[#5BA4B5]",
             borderColor: "border-[#5BA4B5]",
