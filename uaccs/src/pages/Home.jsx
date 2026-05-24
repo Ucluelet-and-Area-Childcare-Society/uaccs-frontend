@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom'
-import {ArrowRight, School} from 'lucide-react'
+import {ArrowRight, School, Shapes} from 'lucide-react'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
@@ -38,13 +38,17 @@ function Home() {
             <div className = "bg-white h-64 border-6 border-[#5BA4B5] shadow-custom_shadow shadow-uaccs_blue text-[#5BA4B5] py-5">
                 Ucluelet Children's Centre
             </div>
-            <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E] text-uaccs_green py-5">
+            <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E] text-uaccs_green py-5 flex flex-col items-center justify-between">
                 Little Beans Infant Toddler Centre
+                <Shapes size = {36} />
+                <div className = "text-gray-700 font-extralight text-[18px] font-serif">
+                    Ages: 0 - 36 months
+                </div>
             </div>
             <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350] text-uaccs_orange py-5 flex flex-col items-center justify-between">
                 After-school Care
                 <School size = {36}/>
-                <div className = "text-gray-700 font-light text-[18px] font-serif">
+                <div className = "text-gray-700 font-extralight text-[18px] font-serif">
                     Ages: 5 - 12
                 </div>
             </div>
