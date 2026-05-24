@@ -24,7 +24,7 @@ function Home() {
         {
             title: "After-school Care",
             icon: School,
-            ages: "Ages: 5 - 12",
+            ages: "Ages: 5 - 12 years",
             textColor: "text-uaccs_orange",
             borderColor: "border-uaccs_orange",
             shadowColor: "shadow-[#D89350]"
