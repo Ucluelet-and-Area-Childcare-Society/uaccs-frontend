@@ -32,24 +32,19 @@ function Home() {
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
-                <div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-                        
-                    </div>
-                </div>
             </div>
         </div>
-        
-       
-       
-       
-       
+        <div className = "grid grid-cols-3 grid-rows-1 max-w-5xl gap-8 w-full mt-30 text-center">
+            <div>
+                DIV 1
+            </div>
+            <div>
+                DIV 2
+            </div>
+            <div>
+                DIV 3
+            </div>
+        </div>  
        </div>
     )
 
