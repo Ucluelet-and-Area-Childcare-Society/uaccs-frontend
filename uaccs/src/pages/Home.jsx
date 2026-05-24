@@ -4,6 +4,34 @@ import {ArrowRight, School, Shapes} from 'lucide-react'
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
 
+    const programs = [
+        {
+            title: "Ucluelet Children's Centre",
+            icon: Shapes,
+            ages: "Ages: x - y",
+            textColor: "text-[#5BA4B5]",
+            borderColor: "border-[#5BA4B5]",
+            shadowColor: "shadow-uaccs_blue"
+        },
+        {
+            title: "Little Beans Infant Toddler Centre",
+            icon: Shapes,
+            ages: "Ages: 0 - 36 months",
+            textColor: "text-uaccs_green ",
+            borderColor: "border-uaccs_green",
+            shadowColor: "shadow=[#A8BA4E]"
+        },
+        {
+            title: "After-school Care",
+            icon: School,
+            ages: "Ages: 5 - 12",
+            textColor: "text-uaccs_orange",
+            borderColor: "border-uaccs_orange",
+            shadowColor: "shadow-[#D89350]"
+        }
+
+    ]
+
     return (
        <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <h1 className = "font-dancing font-bold text-[#A8BA4E] text-[38px]">
@@ -34,6 +62,8 @@ function Home() {
                 </NavLink>
             </div>
         </div>
+
+
         <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
             <div className = "bg-white h-64 border-6 border-[#5BA4B5] shadow-custom_shadow shadow-uaccs_blue text-[#5BA4B5] py-5">
                 Ucluelet Children's Centre
