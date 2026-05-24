@@ -7,7 +7,7 @@ function DropdownMenu({label, items}) {
 
     return (
         <Menu.Root>
-            <Menu.Trigger openOnHover delay = {100} className = "flex items-center gap-1 hover:text-uaccs_green ">
+            <Menu.Trigger openOnHover delay = {75} className = "flex items-center gap-1 hover:text-uaccs_green ease-in-out">
                 {label}
                 <ChevronDown size={18}/>
             </Menu.Trigger>
