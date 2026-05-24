@@ -1,3 +1,4 @@
+import {NavLink} from 'react-router-dom'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
