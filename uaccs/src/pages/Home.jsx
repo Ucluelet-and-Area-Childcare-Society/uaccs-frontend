@@ -70,7 +70,7 @@ function Home() {
                 <div 
                 key = {index} 
                 className = {`bg-white h-64 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between ${program.borderColor} ${program.textColor} ${program.shadowColor}`}>
-                    {program.title}
+                    <h3>{program.title}</h3>
                     <Icon size = {36} />
                     <div className = "text-gray-700 font-extralight text-[18px] font-serif">
                         {program.ages}
