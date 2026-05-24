@@ -70,11 +70,11 @@ function Home() {
                 <div 
                 key = {index} 
                 className = {`bg-white h-64 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between ${program.borderColor} ${program.textColor} ${program.shadowColor}`}>
-                {program.title}
-                <Icon size = {36} />
-                <div className = "text-gray-700 font-extralight text-[18px] font-serif">
-                    {program.ages}
-                </div>
+                    {program.title}
+                    <Icon size = {36} />
+                    <div className = "text-gray-700 font-extralight text-[18px] font-serif">
+                        {program.ages}
+                    </div>
                 </div>
             )
           })}  
