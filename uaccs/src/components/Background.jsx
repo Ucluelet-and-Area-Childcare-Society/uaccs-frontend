@@ -11,7 +11,7 @@ function createWatermark(key, x, y, rotation, color) {
             fontWeight: 400,
             fontSize: "14px",
             color: color,
-            opacity: 0.35,
+            opacity: 0.30,
             position: 'absolute',
             top: `${y}%`,
             left: `${x}%`,
