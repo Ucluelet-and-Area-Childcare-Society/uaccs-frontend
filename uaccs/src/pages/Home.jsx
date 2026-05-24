@@ -28,7 +28,7 @@ function Home() {
                 </p>
                 <NavLink 
                     to = "/waitlist" 
-                    className = "flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all active:translate-y-1 active:border-b-0 active:border-r-0">
+                    className = "flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 active:translate-y-1 active:border-b-0 active:border-r-0">
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
