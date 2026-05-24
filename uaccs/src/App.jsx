@@ -18,25 +18,26 @@ import MeetOurBod from './pages/about/MeetOurBod'
 function App() {
 
   return (
-   <div className = "h-screen w-full flex flex-col overflow-auto">
+   <div className = "h-screen w-full flex flex-col overflow-hidden">
     <Background/>
     <Header/>
-    <Routes>
-        <Route path = "/" element = {<Home/>}/>
-        <Route path = "/programs" element = {<Programs/>}/>
-        <Route path = "/waitlist" element = {<Waitlist/>}/>
-        <Route path = "/contact" element = {<Contact/>}/>
+    <main className = "flex-1 overflow-auto relative z-10">
+        <Routes>
+            <Route path = "/" element = {<Home/>}/>
+            <Route path = "/programs" element = {<Programs/>}/>
+            <Route path = "/waitlist" element = {<Waitlist/>}/>
+            <Route path = "/contact" element = {<Contact/>}/>
 
-        <Route path = "/about" element = {<About/>}>
-            <Route path = "who-we-are" element = {<WhoWeAre/>}/>
-            <Route path = "meet-our-staff" element = {<MeetOurStaff/>}/>
-            <Route path = "meet-our-bod" element = {<MeetOurBod/>}/>
-        </Route>
+            <Route path = "/about" element = {<About/>}>
+                <Route path = "who-we-are" element = {<WhoWeAre/>}/>
+                <Route path = "meet-our-staff" element = {<MeetOurStaff/>}/>
+                <Route path = "meet-our-bod" element = {<MeetOurBod/>}/>
+            </Route>
 
-        <Route path = "/get-involved" element = {<GetInvolved/>}/>
-        <Route path = "/resources" element = {<Resources/>}/>
-
-    </Routes>
+            <Route path = "/get-involved" element = {<GetInvolved/>}/>
+            <Route path = "/resources" element = {<Resources/>}/>
+        </Routes>
+    </main>
     <Footer/>
    </div>
   )
