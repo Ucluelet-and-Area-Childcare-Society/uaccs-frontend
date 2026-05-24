@@ -1,11 +1,11 @@
 import {NavLink} from 'react-router-dom'
-import {ArrowRight} from 'lucide-react'
+import {ArrowRight, School} from 'lucide-react'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
 
     return (
-       <div className = "flex flex-col items-center p-10 mx-auto z-0">
+       <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <h1 className = "font-dancing font-bold text-[#A8BA4E] text-[38px]">
             Committed to providing affordable, inclusive, safe, and nurturing childcare.
         </h1>
@@ -41,8 +41,12 @@ function Home() {
             <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E] text-uaccs_green py-5">
                 Little Beans Infant Toddler Centre
             </div>
-            <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350] text-uaccs_orange py-5">
+            <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350] text-uaccs_orange py-5 flex flex-col items-center justify-between">
                 After-school Care
+                <School size = {36}/>
+                <div className = "text-gray-700 font-light text-[18px] font-serif">
+                    Ages: 5 - 12
+                </div>
             </div>
         </div>  
        </div>
