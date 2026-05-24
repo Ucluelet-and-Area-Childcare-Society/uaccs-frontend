@@ -5,19 +5,19 @@ import {ArrowRight} from 'lucide-react'
 function Home() {
 
     return (
-       <div className = "flex flex-col items-start p-10 mx-auto z-0">
+       <div className = "flex flex-col items-center p-10 mx-auto z-0">
         <h1 className = "font-dancing font-bold text-[#A8BA4E] text-[38px]">
             Committed to providing affordable, inclusive, safe, and nurturing childcare.
         </h1>
-        <div className = "flex flex-row mt-20 gap-25">
+        <div className = "flex flex-row mt-20 gap-30 justify-center">
             <img 
             src = "/test_img.jpg" 
             alt = "test image" 
-            width = "500" 
-            height = "500" 
+            width = "550" 
+            height = "550" 
             className = "border-5 border-uaccs_green outline-2 outline-[#5BA4B5] outline-offset-10 shrink-0"
             />
-            <div className = "mt-10 w-1/3 flex flex-col gap-8">
+            <div className = "mt-10 w-1/3 flex flex-col gap-9">
                 <h2 className = "font-dancing font-semibold text-3xl text-[#5BA4B5]">
                     Some Call to Action here...
                 </h2>
@@ -32,6 +32,17 @@ function Home() {
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
+                <div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
         
