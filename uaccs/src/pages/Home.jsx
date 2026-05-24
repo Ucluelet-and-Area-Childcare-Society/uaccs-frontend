@@ -34,14 +34,14 @@ function Home() {
                 </NavLink>
             </div>
         </div>
-        <div className = "grid grid-cols-3 grid-rows-1 max-w-5xl gap-8 w-full mt-30 text-center">
-            <div className = "bg-white">
+        <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-30 text-center">
+            <div className = "bg-white h-64 border-6 border-[#5BA4B5] shadow-custom_shadow shadow-uaccs_blue">
                 DIV 1
             </div>
-            <div className = "bg-white">
+            <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E]">
                 DIV 2
             </div>
-            <div className = "bg-white">
+            <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350]">
                 DIV 3
             </div>
         </div>  
