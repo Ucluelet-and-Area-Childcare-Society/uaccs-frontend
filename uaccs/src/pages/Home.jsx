@@ -1,4 +1,5 @@
 import {NavLink} from 'react-router-dom'
+import {ArrowRight} from 'lucide-react'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
@@ -25,6 +26,10 @@ function Home() {
                     and it is our privilege and honour to play a part in shaping a brighter future 
                     for the next generation of Ucluelet residents. 
                 </p>
+                <NavLink to = "/waitlist" className = "flex items-center gap-0.5">
+                    Join Our Waitlist
+                    <ArrowRight/>
+                </NavLink>
             </div>
         </div>
         
