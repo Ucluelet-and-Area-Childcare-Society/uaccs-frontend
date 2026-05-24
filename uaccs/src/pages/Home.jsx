@@ -8,7 +8,7 @@ function Home() {
         {
             title: "Ucluelet Children's Centre",
             icon: Backpack,
-            ages: "Ages: x - y",
+            ages: "Ages: 0 - 12 years",
             textColor: "text-[#5BA4B5]",
             borderColor: "border-[#5BA4B5]",
             shadowColor: "shadow-uaccs_blue"
