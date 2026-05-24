@@ -17,8 +17,6 @@ function Header() {
         {label: "Meet Our Board of Directors", to: "/about/meet-our-bod"}
     ]
 
-    const programsLinks = []
-
     return (
         <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-uaccs_blue border-b-3 border-[#3A6A77] justify-between">
             <div className='flex items-center gap-3 select-none'>
