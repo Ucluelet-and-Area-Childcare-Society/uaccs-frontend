@@ -18,7 +18,7 @@ import MeetOurBod from './pages/about/MeetOurBod'
 function App() {
 
   return (
-   <div className = "h-screen w-full flex flex-col overflow-hidden">
+   <div className = "h-screen w-full flex flex-col overflow-auto">
     <Background/>
     <Header/>
     <Routes>
