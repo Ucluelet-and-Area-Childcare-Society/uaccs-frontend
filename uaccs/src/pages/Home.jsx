@@ -35,13 +35,13 @@ function Home() {
             </div>
         </div>
         <div className = "grid grid-cols-3 grid-rows-1 max-w-5xl gap-8 w-full mt-30 text-center">
-            <div>
+            <div className = "bg-white">
                 DIV 1
             </div>
-            <div>
+            <div className = "bg-white">
                 DIV 2
             </div>
-            <div>
+            <div className = "bg-white">
                 DIV 3
             </div>
         </div>  
