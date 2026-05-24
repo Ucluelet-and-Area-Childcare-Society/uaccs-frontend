@@ -34,15 +34,15 @@ function Home() {
                 </NavLink>
             </div>
         </div>
-        <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-30 text-center">
-            <div className = "bg-white h-64 border-6 border-[#5BA4B5] shadow-custom_shadow shadow-uaccs_blue">
-                DIV 1
+        <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
+            <div className = "bg-white h-64 border-6 border-[#5BA4B5] shadow-custom_shadow shadow-uaccs_blue text-[#5BA4B5] py-5">
+                Ucluelet Children's Centre
             </div>
-            <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E]">
-                DIV 2
+            <div className = "bg-white border-6 border-uaccs_green shadow-custom_shadow shadow-[#A8BA4E] text-uaccs_green py-5">
+                Little Beans Infant Toddler Centre
             </div>
-            <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350]">
-                DIV 3
+            <div className = "bg-white border-6 border-uaccs_orange shadow-custom_shadow shadow-[#D89350] text-uaccs_orange py-5">
+                After-school Care
             </div>
         </div>  
        </div>
