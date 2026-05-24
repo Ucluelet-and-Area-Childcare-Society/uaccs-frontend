@@ -17,7 +17,7 @@ function Home() {
             height = "500" 
             className = "border-5 border-uaccs_green outline-2 outline-[#5BA4B5] outline-offset-10 shrink-0"
             />
-            <div className = "mt-10 w-1/3 flex flex-col gap-7">
+            <div className = "mt-10 w-1/3 flex flex-col gap-8">
                 <h2 className = "font-dancing font-semibold text-3xl text-[#5BA4B5]">
                     Some Call to Action here...
                 </h2>
@@ -28,7 +28,7 @@ function Home() {
                 </p>
                 <NavLink 
                     to = "/waitlist" 
-                    className = "flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 active:translate-y-1 active:border-b-0 active:border-r-0">
+                    className = "flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
