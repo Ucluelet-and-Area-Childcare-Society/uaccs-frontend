@@ -6,7 +6,7 @@ import DropdownMenu from './DropdownMenu'
 function Header() {
 
     const navLinks = [
-        {to: "/programs", label: "Programs"}
+        {to: "/programs", label: "Programs"},
         { to: "/resources", label: "Resources"},
         { to: "/GetInvolved", label: "Get Involved"},
         { to: "/contact", label: "Contact"},
