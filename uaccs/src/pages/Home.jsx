@@ -26,7 +26,9 @@ function Home() {
                     and it is our privilege and honour to play a part in shaping a brighter future 
                     for the next generation of Ucluelet residents. 
                 </p>
-                <NavLink to = "/waitlist" className = "flex items-center gap-0.5">
+                <NavLink 
+                    to = "/waitlist" 
+                    className = "flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-[6px_6px_0px_#D89350]">
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
