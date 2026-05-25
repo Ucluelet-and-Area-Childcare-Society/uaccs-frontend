@@ -22,7 +22,7 @@ function WhoWeAre() {
                 color: `${item.border_icon_color}`,
                 }}
                 >
-                    <h3 className = "vertical-timeline-element-title font-dancing text-2xl text-semibold mb-10!">
+                    <h3 className = "vertical-timeline-element-title font-dancing text-3xl text-semi mb-10!">
                         {item.title}
                     </h3>
                     <p className = "text-justify text-gray-700">
