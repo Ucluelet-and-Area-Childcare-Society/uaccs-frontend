@@ -3,7 +3,6 @@ import {ArrowRight, School, Shapes, Backpack} from 'lucide-react'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
-
     const programs = [
         {
             title: "Ucluelet Children's Centre",
@@ -33,7 +32,7 @@ function Home() {
     ]
 
     return (
-       <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
+    <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <h1 className = "font-dancing font-bold text-[#A8BA4E] text-[38px]">
             Committed to providing affordable, inclusive, safe, and nurturing childcare.
         </h1>
@@ -78,8 +77,11 @@ function Home() {
                 </div>
             )
           })}  
-        </div>  
-       </div>
+        </div>
+        <div className = "w-full bg-white mt-20">
+            <iframe src={import.meta.env.VITE_GOOGLE_CALENDAR_URL} className = "w-full h-150"></iframe>
+        </div>
+    </div>
     )
 
 }
