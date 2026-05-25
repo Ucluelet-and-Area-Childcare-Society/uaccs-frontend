@@ -1,12 +1,15 @@
 import Timeline from '../../components/Timeline'
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
-import {Compass} from 'lucide-react'
+import {Compass, Telescope, Award, Flag} from 'lucide-react'
 
 function WhoWeAre() {
 
     const items = [
-        {title: "Our Mission & Purpose", icon: Compass, border_icon_color: "#5BA4B5", text: "some text here"}
+        {title: "Our Mission & Purpose", icon: Compass, border_icon_color: "#5BA4B5", text: "some text here"},
+        {title: "Vision For The Future", icon: Telescope, border_icon_color: "#E8A562", text: "some more text"},
+        {title: 'Unique Strengths & Capabilities', icon: Award, border_icon_color: "#C4D65E", text: "yet more text..."},
+        {title: "Measuring Success", icon: Flag, border_icon_color: "#5BA4B5", text: "more text,,,"}
     ]
    
     return (
