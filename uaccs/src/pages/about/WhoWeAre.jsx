@@ -25,7 +25,7 @@ function WhoWeAre() {
                     <h3 className = "vertical-timeline-element-title font-dancing text-2xl text-semibold">
                         {item.title}
                     </h3>
-                    <p>
+                    <p className = "text-justify">
                         {item.text}
                     </p>
 
