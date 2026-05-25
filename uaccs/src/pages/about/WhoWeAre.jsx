@@ -1,4 +1,4 @@
-import {Chrono} from 'react-chrono'
+import Timeline from '../../components/Timeline'
 
 function WhoWeAre() {
 
