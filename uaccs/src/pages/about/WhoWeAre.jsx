@@ -3,17 +3,17 @@ import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline
 import 'react-vertical-timeline-component/style.min.css'
 
 function WhoWeAre() {
-
-    const items = [
-        {title: 'title', cardTitle: 'cardTitle', cardDetailedText: 'text text'},
-        {title: 'title', cardTitle: 'cardTitle', cardDetailedText: 'text text'}
-    ]
-
    
     return (
-        <>
-        </>
-        
+        <VerticalTimeline>
+
+
+
+
+
+
+
+        </VerticalTimeline> 
     )
 
 }
