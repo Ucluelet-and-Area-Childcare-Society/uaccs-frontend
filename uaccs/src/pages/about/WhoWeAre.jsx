@@ -1,4 +1,4 @@
-
+import {Chrono} from 'react-chrono'
 
 function WhoWeAre() {
 
