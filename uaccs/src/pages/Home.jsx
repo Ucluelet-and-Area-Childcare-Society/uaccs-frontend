@@ -78,7 +78,7 @@ function Home() {
             )
           })}  
         </div>
-        <div className = "w-full bg-white mt-20">
+        <div className = "w-full  mt-20">
             <iframe src={import.meta.env.VITE_GOOGLE_CALENDAR_URL} className = "w-full h-150"></iframe>
         </div>
     </div>
