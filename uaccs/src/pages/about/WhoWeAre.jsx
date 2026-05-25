@@ -6,7 +6,7 @@ import {TimelineItems} from '../../data/TimelineItems'
 function WhoWeAre() {
 
     return (
-        <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
+        <div className = "flex flex-col items-center p-2 mx-auto z-0 w-full">
             <h1 className = "font-dancing text-[#A8BA4E] text-[100px]">Who We Are</h1>
             <VerticalTimeline lineColor='#5BA4B5'>
                 {TimelineItems.map((item, index) => (
