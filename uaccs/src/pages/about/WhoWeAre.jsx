@@ -1,12 +1,13 @@
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import {TimelineItems} from '../../data/TimelineItems'
+
+
 function WhoWeAre() {
 
-   
     return (
         <VerticalTimeline lineColor='#5BA4B5'>
-            {items.map((item, index) => (
+            {TimelineItems.map((item, index) => (
                 <VerticalTimelineElement
                 key = {index}
                 contentStyle = {{
