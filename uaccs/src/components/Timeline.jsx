@@ -3,4 +3,4 @@ function Timeline({items}) {
 
 }
 
-export defualt Timeline;
+export default Timeline;
