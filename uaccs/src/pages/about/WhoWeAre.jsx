@@ -13,7 +13,7 @@ function WhoWeAre() {
                     <VerticalTimelineElement
                     key = {index}
                     contentStyle = {{
-                        border: `8px double ${item.border_icon_color}`
+                        border: `8px double ${item.border_icon_color}`,
                     }}
                     contentArrowStyle={{
                     display: 'none'
@@ -23,6 +23,7 @@ function WhoWeAre() {
                     background: '#FFFFFF',
                     color: `${item.border_icon_color}`,
                     }}
+                    className = "transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-[1.10]"
                     >
                         <h3 className = "vertical-timeline-element-title font-dancing text-3xl text-semi mb-10!">
                             {item.title}
@@ -30,6 +31,7 @@ function WhoWeAre() {
                         <p className = "text-justify text-gray-700">
                             {item.text}
                         </p>
+
                     </VerticalTimelineElement>
                 ))}
             </VerticalTimeline> 
