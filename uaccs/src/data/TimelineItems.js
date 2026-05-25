@@ -1,3 +1,4 @@
+import {Compass, Telescope, Award, Flag, Lightbulb, Scale} from 'lucide-react'
 
 /* Array of timeline items to display on Who We Are section */
 const TimelineItems = [
