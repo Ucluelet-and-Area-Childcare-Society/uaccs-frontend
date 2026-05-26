@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom'
-import {ArrowRight, School, Shapes, Backpack} from 'lucide-react'
+import {ArrowRight, School, Shapes, Backpack, Heart} from 'lucide-react'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
@@ -46,7 +46,7 @@ function Home() {
             />
             <div className = "mt-10 w-1/3 flex flex-col gap-9">
                 <h2 className = "font-dancing font-semibold text-3xl text-[#5BA4B5]">
-                    Some Call to Action here...
+                    $10/day Daycare
                 </h2>
                 <p className = "text-justify opacity-75 text-gray-700 tracking-wide leading-6">
                     At UACCS, we believe that every child deserves the opportunity to thrive, 
