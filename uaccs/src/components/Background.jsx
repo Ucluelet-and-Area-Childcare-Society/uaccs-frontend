@@ -17,11 +17,12 @@ function Background() {
             y: Math.random() * (window.innerHeight - 50),
             dx: (Math.random() > 0.5 ? 1 : -1),
             dy: (Math.random() > 0.5 ? 1 : -1),
-
         }))
-
     }, [])
 
+    const animate = () => {
+        
+    }
 
 
     return (
