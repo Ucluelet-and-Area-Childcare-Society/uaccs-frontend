@@ -42,7 +42,7 @@ function Home() {
             alt = "test image" 
             width = "550" 
             height = "550" 
-            className = "border-5 border-uaccs_green outline-2 outline-[#5BA4B5] outline-offset-10 shrink-0"
+            className = ""
             />
             <div className = "mt-10 w-1/3 flex flex-col gap-9">
                 <h2 className = "font-uaccs font-semibold text-5xl text-[#5BA4B5]">
@@ -55,7 +55,7 @@ function Home() {
                 </p>
                 <NavLink 
                     to = "/waitlist" 
-                    className = "flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                    className = "font-schoolbell flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
