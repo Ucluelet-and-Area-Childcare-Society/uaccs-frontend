@@ -42,7 +42,7 @@ function Home() {
             alt = "test image" 
             width = "550" 
             height = "550" 
-            className = ""
+            className = "border-8 border-uaccs_green -rotate-2"
             />
             <div className = "mt-10 w-1/3 flex flex-col gap-9">
                 <h2 className = "font-uaccs font-semibold text-5xl text-[#5BA4B5]">
