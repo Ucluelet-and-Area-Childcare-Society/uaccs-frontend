@@ -21,6 +21,14 @@ function Background() {
     }, [])
 
     const animate = () => {
+        itemsRef.current.forEach((item) => {
+            x += dx
+            y += dy
+            
+        });
+
+    
+
 
 
         valueRef.current = requestAnimationFrame(animate)
