@@ -32,7 +32,7 @@ function Home() {
     ]
 
     return (
-    <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full mt-5">
+    <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <h1 className = "font-uaccs font-bold text-[#A8BA4E] text-[52px]">
             Committed to providing affordable, inclusive, safe, and nurturing childcare.
         </h1>
