@@ -7,10 +7,18 @@ function Background() {
     const itemsRef = useRef([])
     const valueRef = useRef()
     const NUM_ELEMENTS = 100
-    
+
 
     // trigger render only once
     useEffect(() => {
+        itemsRef.current = Array.from({length : NUM_ELEMENTS}).map(() => ({
+            elem: null,
+            x: Math.random() * (window.innerWidth - 50),
+            y: Math.random() * (window.innerHeight - 50),
+            dx: (Math.random() > 0.5 ? 1 : -1),
+            dy: (Math.random() > 0.5 ? 1 : -1),
+
+        }))
 
     }, [])
 
