@@ -69,9 +69,9 @@ function Home() {
                 <div 
                 key = {index} 
                 className = {`bg-white h-64 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between ${program.borderColor} ${program.textColor} ${program.shadowColor}`}>
-                    <h3>{program.title}</h3>
+                    <h3 className = "font-uaccs text-3xl" >{program.title}</h3>
                     <Icon size = {36} />
-                    <div className = "text-gray-700 font-extralight text-[18px] font-serif">
+                    <div className = "text-gray-700 font-extralight text-[18px] font-schoolbell">
                         {program.ages}
                     </div>
                 </div>
