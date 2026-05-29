@@ -16,7 +16,7 @@ function createWatermark(key, x, y, rotation, color, Icon) {
             whiteSpace: "nowrap",
         }}
         >
-            <Icon size = {18} strokeWidth = {1.5} fill = {color}/>
+            <Icon size = {48} strokeWidth = {1.5} fill = {color}/>
         </div>
 
     );
@@ -29,8 +29,8 @@ function Background() {
     const elements = []
     const colors = ['#5BA4B5', '#C4D65E', '#E8A562']
     const icons = [Square, Circle, Triangle]
-    const rows = 24
-    const cols = 15
+    const rows = 10
+    const cols = 6
     let key = 0
 
     // randomize element position within its own grid cell to reduce overlap
