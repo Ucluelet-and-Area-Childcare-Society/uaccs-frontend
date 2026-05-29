@@ -8,7 +8,7 @@ function createWatermark(key, x, y, rotation, color, Icon) {
         className = "font-dancing absolute pointer-events-none overflow-hidden z-0"
         style = {{
             color: color,
-            opacity: 0.12,
+            opacity: 0.20,
             position: 'absolute',
             top: `${y}%`,
             left: `${x}%`,
