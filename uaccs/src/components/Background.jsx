@@ -6,6 +6,8 @@ import { useRef, useEffect } from 'react';
 function Background() {
     const itemsRef = useRef([])
     const valueRef = useRef()
+    const NUM_ELEMENTS = 100
+    
 
     // trigger render only once
     useEffect(() => {
