@@ -1,4 +1,5 @@
 import {Square, Circle, Triangle} from 'lucide-react'
+import {motion} from 'motion/react'
 
 /* Returns a div with the specified coordinates and layout*/
 function createWatermark(key, x, y, rotation, color, Icon) {
