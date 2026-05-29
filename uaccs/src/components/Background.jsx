@@ -4,7 +4,7 @@ import {motion} from 'motion/react'
 /* Returns a div with the specified coordinates and layout*/
 function createWatermark(key, x, y, rotation, color, Icon) {
     return (
-        <div
+        <motion.div
         key = {key}
         className = "font-dancing absolute pointer-events-none overflow-hidden z-0"
         style = {{
@@ -16,9 +16,19 @@ function createWatermark(key, x, y, rotation, color, Icon) {
             transform: `rotate(${rotation}deg)`,
             whiteSpace: "nowrap",
         }}
+        initial = {{left: "=10%"}} // start animation off-screen
+        animate = {{
+            y: [0, -50, 0],
+            x: [0, -200, 0]
+        }}
+        transition = {{
+            ease: "linear",
+            duration: 6,
+            repeat: Infinity
+        }}
         >
             <Icon size = {48} strokeWidth = {1.5} fill = {color}/>
-        </div>
+        </motion.div>
 
     );
 
