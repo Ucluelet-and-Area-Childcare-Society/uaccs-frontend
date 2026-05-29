@@ -19,7 +19,7 @@ function Header() {
     ]
 
     return (
-        <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-uaccs_blue border-b-3 border-[#3A6A77] justify-between">
+        <header className = "relative z-20 w-full px-6 py-4 flex flex-row bg-uaccs_blue justify-between">
             <div className='flex items-center gap-3 select-none'>
                 <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16 "/>
                 <div className='tracking-wider'>
@@ -38,6 +38,22 @@ function Header() {
                 ))}
                 <NavLink to = "/waitlist" className = 'bg-uaccs_orange p-2 rounded-md hover:text-uaccs_orange hover:bg-white transition-all duration-300 ease-in-out hover:-translate-y-1'> Waitlist </NavLink>
             </nav>
+            <div className = "absolute bottom-0 left-0 w-full overflow-hidden translate-y-full">
+                <svg
+                viewBox="0 0 1440 320"
+                preserveAspectRatio='none'
+                className = "w-full h-10" 
+                >
+                    <path 
+                    fill="#4A8A9A" 
+                    fill-opacity="1"
+                    d="M0,288L40,266.7C80,245,160,203,240,192C320,181,400,203,480,229.3C560,256,640,288,720,298.7C800,309,880,299,960,272C1040,245,1120,203,1200,202.7C1280,203,1360,245,1400,266.7L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+                    </path>
+
+                </svg>
+
+            </div>
+            
 
         </header>
     )
