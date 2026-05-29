@@ -18,10 +18,10 @@ import MeetOurBod from './pages/about/MeetOurBod'
 function App() {
 
   return (
-   <div className = "h-screen w-full flex flex-col overflow-hidden">
+   <div className = "h-screen w-full flex flex-col relative">
     <Background/>
     <Header/>
-    <main className = "flex-1 overflow-auto relative z-10">
+    <main className = "flex-1 relative z-10">
         <Routes>
             <Route path = "/" element = {<Home/>}/>
             <Route path = "/programs" element = {<Programs/>}/>
@@ -37,8 +37,8 @@ function App() {
             <Route path = "/get-involved" element = {<GetInvolved/>}/>
             <Route path = "/resources" element = {<Resources/>}/>
         </Routes>
-        <Footer/>
     </main>
+    <Footer/>
    </div>
   )
 }
