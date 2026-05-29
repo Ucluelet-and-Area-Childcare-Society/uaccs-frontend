@@ -15,7 +15,7 @@ function DropdownMenu({label, items}) {
                 <Menu.Positioner side = "bottom" align = "start" sideOffset={4} className = "z-50" >
                     <Menu.Popup className = "shadow-md bg-white border-2 p-3 focus:outline-none">
                         {items.map(item => (
-                            <Menu.LinkItem className = "flex flex-col data-highlighted:opacity-50 focus:outline-none" render = {<NavLink to = {item.to} /> }>
+                            <Menu.LinkItem className = "font-schoolbell flex flex-col data-highlighted:opacity-50 focus:outline-none" render = {<NavLink to = {item.to} /> }>
                                 {item.label}
                             </Menu.LinkItem>
                         ))}
