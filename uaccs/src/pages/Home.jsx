@@ -38,14 +38,18 @@ function Home() {
         </h1>
         <div className = "flex flex-row mt-20 gap-30 justify-center">
 
-            <div className = "rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden shadow-md">
-                <img 
-                src = "/test_img.jpg" 
-                alt = "test image" 
-                width = "550" 
-                height = "550" 
-                className = "pointer-events-none object-cover"
-                />
+            <div className = "inset-0 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-white border-6 border-dashed border-uaccs_green">
+                <div className = "rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden shadow-lg">
+                    <img 
+                        src = "/test_img.jpg" 
+                        alt = "test image" 
+                        width = "550" 
+                        height = "550" 
+                        className = "pointer-events-none object-cover"
+                    />
+                </div>
+
+
             </div>
 
 
