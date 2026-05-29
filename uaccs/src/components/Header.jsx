@@ -19,7 +19,7 @@ function Header() {
     ]
 
     return (
-        <header className = "relative z-20 w-full pt-4 px-6 flex flex-row justify-between">
+        <header className = "sticky top-0 z-50 w-full pt-4 px-6 flex flex-row justify-between">
             <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16 "/>
 
             <nav className = "flex items-center gap-7 text-white font-schoolbell text-md">
@@ -34,7 +34,7 @@ function Header() {
                 <svg
                 viewBox="0 0 1440 320"
                 preserveAspectRatio='none'
-                className = "w-full h-34" 
+                className = "w-full h-30" 
                 >
                     <path 
                     fill="#4A8A9A" 
