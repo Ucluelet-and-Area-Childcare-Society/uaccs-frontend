@@ -6,25 +6,25 @@ function createWatermark(key, x, y, rotation, color, Icon) {
     return (
         <motion.div
         key = {key}
-        className = "font-dancing absolute pointer-events-none overflow-hidden z-0"
+        className = "absolute pointer-events-none overflow-hidden z-0"
         style = {{
             color: color,
             opacity: 0.20,
             position: 'absolute',
             top: `${y}%`,
             left: `${x}%`,
-            transform: `rotate(${rotation}deg)`,
             whiteSpace: "nowrap",
         }}
-        initial = {{left: "=10%"}} // start animation off-screen
         animate = {{
-            y: [0, -50, 0],
-            x: [0, -200, 0]
+            y: [0, -200, 0],
+            x: [0, -200, 0],
+            rotate: rotation
         }}
         transition = {{
-            ease: "linear",
-            duration: 6,
-            repeat: Infinity
+            ease: "easeInOut",
+            duration: 20,
+            repeat: Infinity,
+            delay: Math.random() * 20
         }}
         >
             <Icon size = {48} strokeWidth = {1.5} fill = {color}/>
