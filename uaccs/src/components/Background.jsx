@@ -2,7 +2,7 @@ import {Square, Circle, Triangle} from 'lucide-react'
 import {motion} from 'motion/react'
 
 /* Returns a div with the specified coordinates and layout*/
-function createWatermark(key, x, y, rotation, color, Icon) {
+function createWatermark(key, x, y, rotation, color, Icon, xDirection, yDirection) {
     return (
         <motion.div
         key = {key}
@@ -13,18 +13,18 @@ function createWatermark(key, x, y, rotation, color, Icon) {
             position: 'absolute',
             top: `${y}%`,
             left: `${x}%`,
+            transform: `rotate(${rotation}deg)`,
             whiteSpace: "nowrap",
         }}
         animate = {{
-            y: [0, -200, 0],
-            x: [0, -200, 0],
-            rotate: rotation
+            x: xDirection,
+            y: yDirection
         }}
         transition = {{
             ease: "easeInOut",
             duration: 20,
             repeat: Infinity,
-            delay: Math.random() * 20
+            delay: Math.random() * 2
         }}
         >
             <Icon size = {48} strokeWidth = {1.5} fill = {color}/>
