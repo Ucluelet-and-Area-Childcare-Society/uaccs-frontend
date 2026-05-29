@@ -1,6 +1,5 @@
 import {NavLink} from 'react-router-dom'
 import {ArrowRight, School, Shapes, Backpack} from 'lucide-react'
-import {motion} from 'motion'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
@@ -38,13 +37,19 @@ function Home() {
             Committed to providing affordable, inclusive, safe, and nurturing childcare.
         </h1>
         <div className = "flex flex-row mt-20 gap-30 justify-center">
-            <img 
-            src = "/test_img.jpg" 
-            alt = "test image" 
-            width = "550" 
-            height = "550" 
-            className = ""
-            />
+
+            <div className = "rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden shadow-md">
+                <img 
+                src = "/test_img.jpg" 
+                alt = "test image" 
+                width = "550" 
+                height = "550" 
+                className = "pointer-events-none object-cover"
+                />
+            </div>
+
+
+
             <div className = "mt-10 w-1/3 flex flex-col gap-9">
                 <h2 className = "font-uaccs font-semibold text-5xl text-[#5BA4B5]">
                     $10/day Daycare
