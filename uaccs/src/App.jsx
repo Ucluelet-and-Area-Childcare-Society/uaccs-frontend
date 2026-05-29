@@ -37,8 +37,8 @@ function App() {
             <Route path = "/get-involved" element = {<GetInvolved/>}/>
             <Route path = "/resources" element = {<Resources/>}/>
         </Routes>
+        <Footer/>
     </main>
-    <Footer/>
    </div>
   )
 }
