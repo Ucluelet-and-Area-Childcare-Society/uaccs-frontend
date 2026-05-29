@@ -1,11 +1,12 @@
 @import url('https://googleapis.com');
-@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Schoolbell&display=swap');
 @import "tailwindcss";
 
 /* Dancing script font theme */
 @theme {
     --font-dancing: "Dancing Script", cursive;
     --font-uaccs: "Just Me Again Down Here", cursive;
+    --font-schoolbell: "Schoolbell", cursive;
     --color-uaccs_green: #C4D65E;
     --color-uaccs_blue: #4A8A9A;
     --color-uaccs_orange: #E8A562;
