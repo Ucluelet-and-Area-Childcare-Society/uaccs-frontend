@@ -1,5 +1,5 @@
 import {Square, Circle, Triangle} from 'lucide-react'
-
+import { useRef, useEffect } from 'react';
 
 
 /* Background component for randomly layed out phrase as a watermark */
