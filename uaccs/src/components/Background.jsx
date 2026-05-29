@@ -1,17 +1,14 @@
-
-const phrase = "$10 per day";
+import {Square, Circle, Triangle} from 'lucide-react'
 
 /* Returns a div with the specified coordinates and layout*/
-function createWatermark(key, x, y, rotation, color) {
+function createWatermark(key, x, y, rotation, color, Icon) {
     return (
         <div
         key = {key}
         className = "font-dancing absolute pointer-events-none overflow-hidden z-0"
         style = {{
-            fontWeight: 400,
-            fontSize: "14px",
             color: color,
-            opacity: 0.30,
+            opacity: 0.12,
             position: 'absolute',
             top: `${y}%`,
             left: `${x}%`,
@@ -19,7 +16,7 @@ function createWatermark(key, x, y, rotation, color) {
             whiteSpace: "nowrap",
         }}
         >
-            {phrase}
+            <Icon size = {18} strokeWidth = {1.5} fill = {color}/>
         </div>
 
     );
@@ -31,7 +28,8 @@ function createWatermark(key, x, y, rotation, color) {
 function Background() {
     const elements = []
     const colors = ['#5BA4B5', '#C4D65E', '#E8A562']
-    const rows = 25
+    const icons = [Square, Circle, Triangle]
+    const rows = 24
     const cols = 15
     let key = 0
 
@@ -44,10 +42,11 @@ function Background() {
             // x and y coordinate should be within its own grid position
             const x = xStart + (Math.random() * (100 / cols))
             const y = yStart + (Math.random() * (100 / rows))
-            const rotation = Math.floor((Math.random() * 40) - 20) // -20 to 20 degrees;
+            const rotation = Math.floor((Math.random() * 90) - 45) // -45 to 45 degrees;
             const color = colors[Math.floor(Math.random() * colors.length)]
+            const icon = icons[Math.floor(Math.random() * icons.length)]
 
-            elements.push(createWatermark(key, x, y, rotation, color))
+            elements.push(createWatermark(key, x, y, rotation, color, icon))
             key++
         }
 
