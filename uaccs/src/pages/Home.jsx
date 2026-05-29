@@ -32,8 +32,8 @@ function Home() {
     ]
 
     return (
-    <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
-        <h1 className = "font-dancing font-bold text-[#A8BA4E] text-[38px]">
+    <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full mt-5">
+        <h1 className = "font-uaccs font-bold text-[#A8BA4E] text-[52px]">
             Committed to providing affordable, inclusive, safe, and nurturing childcare.
         </h1>
         <div className = "flex flex-row mt-20 gap-30 justify-center">
@@ -45,10 +45,10 @@ function Home() {
             className = "border-5 border-uaccs_green outline-2 outline-[#5BA4B5] outline-offset-10 shrink-0"
             />
             <div className = "mt-10 w-1/3 flex flex-col gap-9">
-                <h2 className = "font-dancing font-semibold text-3xl text-[#5BA4B5]">
+                <h2 className = "font-uaccs font-semibold text-5xl text-[#5BA4B5]">
                     $10/day Daycare
                 </h2>
-                <p className = "text-justify opacity-75 text-gray-700 tracking-wide leading-6">
+                <p className = "text-justify opacity-75 text-gray-700 tracking-wide leading-6 font-schoolbell text-2xl">
                     At UACCS, we believe that every child deserves the opportunity to thrive, 
                     and it is our privilege and honour to play a part in shaping a brighter future 
                     for the next generation of Ucluelet residents. 
