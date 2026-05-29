@@ -21,7 +21,9 @@ function Background() {
     }, [])
 
     const animate = () => {
-        
+
+
+        valueRef.current = requestAnimationFrame(animate)
     }
 
 
