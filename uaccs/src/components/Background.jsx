@@ -26,6 +26,11 @@ function Background() {
         valueRef.current = requestAnimationFrame(animate)
     }
 
+    useEffect(() => {
+        valueRef.current = requestAnimationFrame(animate) // start the animation
+        return () => cancelAnimationFrame(valueRef.current)
+    }, [])
+
 
     return (
         <div className = "fixed inset-0 pointer-events-none z-0 bg-[#F5F9FA] overflow-hidden ">
