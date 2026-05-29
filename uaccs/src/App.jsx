@@ -18,7 +18,7 @@ import MeetOurBod from './pages/about/MeetOurBod'
 function App() {
 
   return (
-   <div className = "h-screen w-full flex flex-col relative">
+   <div className = "min-h-screen w-full flex flex-col relative">
     <Background/>
     <Header/>
     <main className = "flex-1 relative z-10">
