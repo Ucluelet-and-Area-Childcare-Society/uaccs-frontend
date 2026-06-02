@@ -27,7 +27,7 @@ function ProgressBar() {
             <div className = "absolute top-0 bottom-0 w-1.5 bg-gray-300">
                 <motion.div
                 style = {{height}}
-                className = "w-full absolute top-0 left-0 bg-uaccs_green origin-top"
+                className = "w-full absolute top-0 left-0 bg-[#4F8A3A] origin-top"
                 />
 
                 <div className = "relative z-20 flex flex-col justify-between h-full -translate-x-1/2 -left-1/2">
@@ -55,17 +55,22 @@ function Step({step, scrollYProgress, index}) {
         scrollYProgress,
         [target - 0.02, target],
         [0, 1],
-        {clamp: true}
+     )
+
+     const color = useTransform(
+        scrollYProgress,
+        [target - 0.02, target],
+        ["#a0aec0", "#4F8A3A"]
      )
 
 
     return (
         <div className = "flex items-center gap-2">
             <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white">
-                <motion.div className = "absolute rounded-full origin-center inset-px bg-uaccs_green" style = {{scale: fillAmt}}/>
+                <motion.div className = "absolute rounded-full origin-center inset-px bg-[#4F8A3A] duration-300" style = {{scale: fillAmt}}/>
             </div>
-            <motion.div>
-                
+            <motion.div style = {{color: color}} className = "text-sm whitespace-nowrap">
+                {step.title}
             </motion.div>
         </div>
     )
