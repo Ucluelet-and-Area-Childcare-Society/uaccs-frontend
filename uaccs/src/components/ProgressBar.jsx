@@ -26,13 +26,13 @@ function ProgressBar() {
         <div className = "fixed left-5 top-32 bottom-32" ref = {ref}>
             <div className = "absolute top-0 bottom-0 w-1.5 bg-gray-300">
                 <motion.div
-                style = {height}
-                className = "w-full absolute top-0 left-0 bg-pink-500 origin-top"
+                style = {{height}}
+                className = "w-full absolute top-0 left-0 bg-uaccs_green origin-top"
                 />
 
                 <div className = "relative z-20 flex flex-col justify-between h-full -translate-x-1/2 -left-1/2">
                     {steps.map(step => (
-                        <Step step = {step} key = {step.id}/>
+                        <Step step = {step} key = {step.id} scrollYProgress={scrollYProgress}/>
                     ))}
                 </div>
             </div>
