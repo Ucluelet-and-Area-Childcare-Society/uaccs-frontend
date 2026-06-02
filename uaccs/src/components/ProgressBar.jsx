@@ -1,12 +1,12 @@
 import {motion, useScroll, useTransform} from 'motion/react'
 
 const steps = [
-    {id: 1, title: "Our Mission & Purpose"},
-    {id: 2, title: "Vision for the Future"},
-    {id: 3, title: "Unique Strengths & Capabilities"},
-    {id: 4, title: "Measuring Success"},
-    {id: 5, title: "Adaptation & Innovation"},
-    {id: 6, title: "Ethical Considerations"}
+    {title: "Our Mission & Purpose"},
+    {title: "Vision for the Future"},
+    {title: "Unique Strengths & Capabilities"},
+    {title: "Measuring Success"},
+    {title: "Adaptation & Innovation"},
+    {title: "Ethical Considerations"}
 ]
 
 /* Progress bar component to showcase current navigation position */
@@ -30,7 +30,7 @@ function ProgressBar({containerRef}) {
 
                 <div className = "relative z-20 flex flex-col justify-between h-full -translate-x-1/2 -left-1/2">
                     {steps.map((step, index) => (
-                        <Step step = {step} key = {step.id} index = {index} scrollYProgress={scrollYProgress}/>
+                        <Step step = {step} key = {index} index = {index} scrollYProgress={scrollYProgress}/>
                     ))}
                 </div>
             </div>
