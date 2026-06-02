@@ -46,4 +46,8 @@ function ProgressBar() {
 
 }
 
+function Step({step}) {
+
+}
+
 export default ProgressBar;
