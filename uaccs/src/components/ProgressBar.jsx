@@ -64,9 +64,9 @@ function Step({step, scrollYProgress, index}) {
             <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white">
                 <motion.div className = "absolute rounded-full origin-center inset-px bg-uaccs_green" style = {{scale: fillAmt}}/>
             </div>
-            <div className = "text-sm text-gray-500 whitespace-nowrap">{step.title}
-                <motion.div style = {{scale: fillAmt}} className = "absolute text-uaccs_green"/>
-            </div>
+            <motion.div>
+                
+            </motion.div>
         </div>
     )
 
