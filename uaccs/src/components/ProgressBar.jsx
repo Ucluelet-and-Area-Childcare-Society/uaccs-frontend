@@ -24,14 +24,14 @@ function ProgressBar() {
 
     return (
         <div className = "fixed left-5 top-32 bottom-32" ref = {ref}>
-            <div className = "absolute top-0 bottom-0 w-2 bg-gray-300"/>
+            <div className = "absolute top-0 bottom-0 w-1.5 bg-gray-300"/>
             <motion.div
             style = {height}
             className = "absolute bg-pink-500"
             />
-            <div className = "flex flex-col justify-between h-full">
+            <div className = "relative z-20 flex flex-col justify-between h-full">
                 {steps.map(step => (
-                    <Step step = {step} key = {step.id}/>
+                    <Step className = "align-center" step = {step} key = {step.id}/>
                 ))}
 
             </div>
@@ -49,7 +49,7 @@ function ProgressBar() {
 function Step({step}) {
     return (
         <div className = "flex items-center gap-2">
-            <div className = "w-5 h-5 rounded-full bg-black"/>
+            <div className = "w-4 h-4 rounded-full bg-gray-300"/>
             <div className = "text-sm text-gray-700">{step.title}</div>
         </div>
     )
