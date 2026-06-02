@@ -12,10 +12,10 @@ const steps = [
 
 /* Progress bar component to showcase current navigation position */
 function ProgressBar() {
-    const ref = useRef(null)
+  //  const ref = useRef(null)
 
     const {scrollYProgress} = useScroll({
-        target: ref,
+        //target: ref,
         offset: ["start center", "end center"]
     })
 
@@ -23,7 +23,7 @@ function ProgressBar() {
 
 
     return (
-        <div className = "fixed left-5 top-32 bottom-32" ref = {ref}>
+        <div className = "fixed left-5 top-32 bottom-32">
             <div className = "absolute top-0 bottom-0 w-1.5 bg-gray-300">
                 <motion.div
                 style = {{height}}
@@ -31,8 +31,8 @@ function ProgressBar() {
                 />
 
                 <div className = "relative z-20 flex flex-col justify-between h-full -translate-x-1/2 -left-1/2">
-                    {steps.map(step => (
-                        <Step step = {step} key = {step.id} scrollYProgress={scrollYProgress}/>
+                    {steps.map((step, index) => (
+                        <Step step = {step} key = {step.id} index = {index} scrollYProgress={scrollYProgress}/>
                     ))}
                 </div>
             </div>
@@ -47,17 +47,26 @@ function ProgressBar() {
 
 }
 
-function Step({step, scrollYProgress}) {
+function Step({step, scrollYProgress, index}) {
 
-    
+    const target = index / (steps.length - 1)
+
+    const fillAmt = useTransform(
+        scrollYProgress,
+        [target - 0.02, target],
+        [0, 1],
+        {clamp: true}
+     )
+
+
     return (
-        <div className = "flex items-center gap-">
+        <div className = "flex items-center gap-2">
             <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white">
-                <motion.div className = "bg-uaccs_green" style = {{}}>
-
-                </motion.div>
+                <motion.div className = "absolute rounded-full origin-center inset-px bg-uaccs_green" style = {{scale: fillAmt}}/>
             </div>
-            <div className = "text-sm text-gray-500 whitespace-nowrap">{step.title}</div>
+            <div className = "text-sm text-gray-500 whitespace-nowrap">{step.title}
+                <motion.div style = {{scale: fillAmt}} className = "absolute text-uaccs_green"/>
+            </div>
         </div>
     )
 
