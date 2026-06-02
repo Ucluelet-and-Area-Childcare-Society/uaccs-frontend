@@ -20,7 +20,9 @@ function Header() {
 
     return (
         <header className = "sticky top-0 z-50 w-full pt-4 px-6 flex flex-row justify-between">
-            <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16 "/>
+            <NavLink to = "/">
+                <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16 "/>
+            </NavLink>
 
             <nav className = "flex items-center gap-7 text-white font-schoolbell text-md">
                 <DropdownMenu label = "About" items = {aboutLinks} />
