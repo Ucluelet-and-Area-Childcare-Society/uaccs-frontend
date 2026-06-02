@@ -1,5 +1,4 @@
 import {motion, useScroll, useTransform} from 'motion/react'
-import {useRef} from 'react'
 
 const steps = [
     {id: 1, title: "Our Mission & Purpose"},
@@ -11,11 +10,10 @@ const steps = [
 ]
 
 /* Progress bar component to showcase current navigation position */
-function ProgressBar() {
-  //  const ref = useRef(null)
+function ProgressBar({containerRef}) {
 
     const {scrollYProgress} = useScroll({
-        //target: ref,
+        target: containerRef,
         offset: ["start center", "end center"]
     })
 
@@ -23,7 +21,7 @@ function ProgressBar() {
 
 
     return (
-        <div className = "fixed left-5 top-32 bottom-32">
+        <div className = "fixed left-5 top-38 bottom-32">
             <div className = "absolute top-0 bottom-0 w-1.5 bg-gray-300">
                 <motion.div
                 style = {{height}}
