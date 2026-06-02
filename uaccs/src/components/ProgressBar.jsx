@@ -67,10 +67,10 @@ function Step({step, scrollYProgress, index}) {
 
     return (
         <div className = "flex items-center gap-2">
-            <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white">
-                <motion.div className = "absolute rounded-full inset-px bg-[#4F8A3A] duration-300" style = {{scale: fillAmt}}/>
+            <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white justify-center">
+                <motion.div className = "absolute rounded-full inset-px bg-[#4F8A3A] duration-200" style = {{scale: fillAmt}}/>
             </div>
-            <motion.div style = {{color: color}} className = "animate-pulse text-sm whitespace-nowrap">
+            <motion.div style = {{color: color}} className = "text-sm whitespace-nowrap">
                 {step.title}
             </motion.div>
         </div>
