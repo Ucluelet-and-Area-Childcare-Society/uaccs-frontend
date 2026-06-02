@@ -5,9 +5,9 @@ const steps = [
     {id: 1, title: "Our Mission & Purpose"},
     {id: 2, title: "Vision for the Future"},
     {id: 3, title: "Unique Strengths & Capabilities"},
-    {id: 3, title: "Measuring Success"},
-    {id: 4, title: "Adaptation & Innovation"},
-    {id: 5, title: "Ethical Considerations"}
+    {id: 4, title: "Measuring Success"},
+    {id: 5, title: "Adaptation & Innovation"},
+    {id: 6, title: "Ethical Considerations"}
 ]
 
 /* Progress bar component to showcase current navigation position */
