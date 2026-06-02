@@ -10,7 +10,7 @@ const steps = [
 ]
 
 /* Progress bar component to showcase current navigation position */
-function ProgressBar() {
+function ProgressBar({activeStep}) {
 
     return (
         <>
