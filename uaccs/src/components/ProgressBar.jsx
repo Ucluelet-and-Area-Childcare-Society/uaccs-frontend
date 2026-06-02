@@ -14,7 +14,7 @@ function ProgressBar({activeStep}) {
 
     return (
         <div className = "fixed left-5 top-32 bottom-32">
-            <div className = "absolute top-0 bottom-0 w-2 border-2 border-black"/>
+            <div className = "absolute top-0 bottom-0 w-2 border-2 border-black rounded-md"/>
 
 
 
