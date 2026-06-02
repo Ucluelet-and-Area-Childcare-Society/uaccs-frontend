@@ -1,4 +1,4 @@
-import {motion, useScroll} from 'motion/react'
+import {motion, useScroll, useTransform} from 'motion/react'
 import {useRef} from 'react'
 
 const steps = [
@@ -19,13 +19,22 @@ function ProgressBar() {
         offset: ["start center", "end center"]
     })
 
+    const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) // Mapping scroll progress to 0 - 1
+
 
     return (
-        <div className = "fixed left-5 top-32 bottom-32">
-            <div className = "absolute top-0 bottom-0 w-2 border-2 bg-border"/>
-            <motion.div>
+        <div className = "fixed left-5 top-32 bottom-32" ref = {ref}>
+            <div className = "absolute top-0 bottom-0 w-2 bg-gray-300"/>
+            <motion.div
+            style = {height}
+            className = "absolute bg-pink-500"
+            />
+            <div className = "flex flex-col justify-between h-full">
+                {steps.map(step => (
+                    <></>
+                ))}
 
-            </motion.div>
+            </div>
 
 
 
