@@ -1,4 +1,4 @@
-
+import {motion} from 'motion'
 
 const steps = [
     {id: 1, title: "Our Mission & Purpose"},
