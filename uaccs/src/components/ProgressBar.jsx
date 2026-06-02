@@ -14,7 +14,7 @@ function ProgressBar({containerRef}) {
 
     const {scrollYProgress} = useScroll({
         target: containerRef,
-        offset: ["start center", "end center"]
+        offset: ["start start", "end end"]
     })
 
     const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) // Mapping scroll progress to 0 - 1
