@@ -21,7 +21,7 @@ function ProgressBar({containerRef}) {
 
 
     return (
-        <div className = "fixed left-5 top-38 bottom-32">
+        <div className = "fixed left-6 top-38 bottom-32">
             <div className = "absolute top-0 bottom-0 w-1.5 bg-gray-300">
                 <motion.div
                 style = {{height}}
