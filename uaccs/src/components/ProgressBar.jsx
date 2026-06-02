@@ -30,7 +30,7 @@ function ProgressBar() {
                 className = "w-full absolute top-0 left-0 bg-pink-500 origin-top"
                 />
 
-                <div className = "relative z-20 flex flex-col justify-between h-full -translate-x-1.5">
+                <div className = "relative z-20 flex flex-col justify-between h-full -translate-x-1/2 -left-1/2">
                     {steps.map(step => (
                         <Step step = {step} key = {step.id}/>
                     ))}
@@ -50,7 +50,7 @@ function ProgressBar() {
 function Step({step}) {
     return (
         <div className = "flex items-center gap-4">
-            <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300"/>
+            <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white"/>
             <div className = "text-sm text-gray-700 whitespace-nowrap">{step.title}</div>
         </div>
     )
