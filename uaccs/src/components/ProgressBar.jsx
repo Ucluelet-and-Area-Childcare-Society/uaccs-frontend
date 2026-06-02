@@ -13,8 +13,15 @@ const steps = [
 function ProgressBar({activeStep}) {
 
     return (
-        <>
-        </>
+        <div className = "fixed left-5 top-30 z-100 w-md">
+            hello
+
+
+
+
+
+
+        </div>
     )
 
 }
