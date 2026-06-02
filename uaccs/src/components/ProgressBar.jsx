@@ -48,12 +48,16 @@ function ProgressBar() {
 }
 
 function Step({step, scrollYProgress}) {
+
+    
     return (
-        <div className = "flex items-center gap-2">
-            <motion.div style = {{}}>
-                <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white"/>
-                <div className = "text-sm text-gray-500 whitespace-nowrap">{step.title}</div>
-            </motion.div>
+        <div className = "flex items-center gap-">
+            <div className = "relative w-5 h-5 rounded-full border-2 border-gray-300 shrink-0 bg-white">
+                <motion.div className = "bg-uaccs_green" style = {{}}>
+
+                </motion.div>
+            </div>
+            <div className = "text-sm text-gray-500 whitespace-nowrap">{step.title}</div>
         </div>
     )
 
