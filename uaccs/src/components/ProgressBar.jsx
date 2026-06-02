@@ -3,7 +3,7 @@ import {motion, useScroll, useTransform} from 'motion/react'
 const steps = [
     {title: "Our Mission & Purpose"},
     {title: "Vision for the Future"},
-    {title: "Unique Strengths & Capabilities"},
+    {title: "What Makes Us Special"},
     {title: "Measuring Success"},
     {title: "Adaptation & Innovation"},
     {title: "Ethical Considerations"}
