@@ -4,7 +4,11 @@ import ProgressBar from "../../components/ProgressBar";
 function WhoWeAre() {
 
     return (
-        <ProgressBar/>
+        <>
+            <ProgressBar/>
+            <div className = "h-[300vh]"/>
+        </>
+        
     )
 
 }
