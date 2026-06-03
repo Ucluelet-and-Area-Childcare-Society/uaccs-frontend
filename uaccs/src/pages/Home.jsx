@@ -86,8 +86,11 @@ function Home() {
         </div>
         <CardStrip items = {items} />
         <section className = "mt-20 rounded-lg py-10 w-full h-full">
-            <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center h-[200vh]">Why Parents Choose Us</h2>
-            
+            <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center">Why Parents Choose Us</h2>
+            <div className = " mt-10 px-6 py-3 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white w-1/5">
+                💰 Just $10/day!
+            </div>
+
         </section>
         
 
