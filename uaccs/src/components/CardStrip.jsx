@@ -10,8 +10,6 @@ function CardStrip({items}) {
     return (
         <div className = "grid grid-cols-4 grid-rows-1 max-w-6xl gap-10 w-full mt-20 text-center text-2xl rounded-md">
           {items.map((item, index) => {
-
-            const Icon = item.icon
             return (
                 <div 
                 key = {index} 
