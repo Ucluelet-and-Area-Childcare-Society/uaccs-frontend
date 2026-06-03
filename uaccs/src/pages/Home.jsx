@@ -45,7 +45,7 @@ function Home() {
                 <div className = "flex flex-row gap-4 justify-between">
                     <NavLink 
                     to = "/waitlist" 
-                    className = "font-schoolbell rounded-md flex items-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                    className = "rounded-md flex items-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                         Join Our Waitlist
                         <ArrowRight/>
                     </NavLink>
@@ -55,6 +55,20 @@ function Home() {
                         Learn More About Us
                         <ArrowRight/>
                     </NavLink>
+                </div>
+                <div className = "flex gap-10 mt-10">
+                    {[
+                        {value: "20+", label: "Years of Care"},
+                        {value: "$10", label: "Per Day Rate"},
+                        {value: "200+", label: "Happy Families"}
+                    ].map(stat => (
+                        <div key = {stat.label}>
+                            <div className = "font-nunito text-3xl font-extrabold text-[#5BA4B5]">{stat.value}</div>
+                            <div className = "text-md text-black">{stat.label}</div>
+
+                        </div>
+
+                    ))}
 
                 </div>
             </div>
