@@ -33,28 +33,37 @@ function Home() {
 
     return (
     <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
-        <div className = "flex flex-row mt-10 gap-30 justify-center">
+        <div className = "flex flex-row mt-10 gap-30 justify-center items-center">
 
-            <div className = "w-1/3 flex flex-col gap-9">
-                <h1 className = "font-nunito font-bold text-6xl text-[#5BA4B5]">
+            <div className = "w-1/3 flex flex-col gap-6">
+                <h1 className = "font-nunito font-bold text-7xl text-[#5BA4B5]">
                     Your Child's Journey Begins Here
                 </h1>
-                <p className = "text-justify opacity-75 mt-5 tracking-wide text-xl font-semibold">
+                <p className = "text-justify opacity-75 p-4 tracking-wide text-xl font-semibold">
                     Affordable · Inclusive · Nurturing
                 </p>
-                <NavLink 
+                <div className = "flex flex-row gap-4 justify-between">
+                    <NavLink 
                     to = "/waitlist" 
-                    className = "font-schoolbell rounded-md flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
-                    Join Our Waitlist
-                    <ArrowRight/>
-                </NavLink>
+                    className = "font-schoolbell rounded-md flex items-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                        Join Our Waitlist
+                        <ArrowRight/>
+                    </NavLink>
+                    <NavLink
+                    to = "/about/who-we-are"
+                    className = "rounded-md flex items-center gap-1 p-5 bg-uaccs_orange border-3 border-solid  border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                        Learn More About Us
+                        <ArrowRight/>
+                    </NavLink>
+
+                </div>
             </div>
 
             <div className = "flex shadow-2xl">
                 <img 
                     src = "/test_img.jpg" 
                     alt = "test image" 
-                    className = "w-140 pointer-events-none h-150 rounded-lg object-cover"
+                    className = "w-145 pointer-events-none h-150 rounded-lg object-cover"
                 />
             </div>
 
