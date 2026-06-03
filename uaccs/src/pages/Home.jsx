@@ -85,30 +85,32 @@ function Home() {
             </div>
         </div>
         <CardStrip items = {items} />
-        <section className = "mt-20 rounded-lg w-full h-full">
+        <section className = "mt-20 rounded-lg max-w-6xl w-full">
             <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center">Why Parents Choose Us</h2>
-            <div className = "flex flex-col gap-10 w-1/2">
-                <div className = "mt-5 px-6 py-3 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white w-5/12">
-                💰 Just $10/day!
+            <div className = "flex flex-row items-center justify-between max-w-lg">
+                <div className = "flex flex-col gap-10 max-w-lg ">
+                    <div className = "mt-5 px-6 py-3 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white w-5/12">
+                        💰 Just $10/day!
+                    </div>
+                    <h3 className = "font-nunito font-bold text-2xl text-[#264D57]">
+                        Affordable, Inclusive, Safe, and Nurturing childcare for every family
+                    </h3>
+                    <p className = "text-justify leading-relaxed">
+                        At UACCS, we believe every child deserves a nurturing, 
+                        high-quality early education — regardless of family income. 
+                        Our $10/day BC Affordable Child Care Benefit rate means you never have 
+                        to choose between work and your child's wellbeing.
+                    </p>
+                    <p className = "text-justify leading-relaxed">
+                        It is our privilege and honour to play a part 
+                        in shaping a brighter future for the next generation of 
+                        Ucluelet residents. 
+                    </p>
+                    <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1 bg-uaccs_blue w-1/4 p-4 rounded-full text-white font-nunito duration-200 transition-all hover:shadow-xl hover:translate-x-1 hover:-translate-y-1">
+                        Learn More
+                        <ArrowRight/>
+                    </NavLink>
                 </div>
-                <h3 className = "font-nunito font-bold text-2xl text-[#264D57]">
-                    Affordable, Inclusive, Safe, and Nurturing childcare for every family
-                </h3>
-                <p className = "text-justify">
-                    At UACCS, we believe every child deserves a nurturing, 
-                    high-quality early education — regardless of family income. 
-                    Our $10/day BC Affordable Child Care Benefit rate means you never have 
-                    to choose between work and your child's wellbeing.
-                </p>
-                <p className = "text-justify">
-                    It is our privilege and honour to play a part 
-                    in shaping a brighter future for the next generation of 
-                    Ucluelet residents. 
-                </p>
-                <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1 bg-uaccs_blue w-1/4 p-4 rounded-full text-white font-nunito duration-200 transition-all hover:shadow-xl hover:translate-x-1 hover:-translate-y-1">
-                    Learn More
-                    <ArrowRight/>
-                </NavLink>
             </div>
 
         </section>
