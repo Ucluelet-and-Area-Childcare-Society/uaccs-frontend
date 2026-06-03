@@ -2,9 +2,7 @@ import {NavLink} from 'react-router-dom'
 import {ArrowRight, Shield, GraduationCap, Heart, Leaf} from 'lucide-react'
 import CardStrip from '../components/CardStrip'
 
-/* Home page with CTA, programs intro, photo, calendar, slogan */
-function Home() {
-    const items = [
+const items = [
         {
             icon: Shield, title: "Safe & Licensed", subtext: "some subtext here...", color: "#4A8A9A"
         },
@@ -20,6 +18,9 @@ function Home() {
 
     ]
 
+/* Home page with CTA, programs intro, photo, calendar, slogan */
+function Home() {
+    
     return (
     <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <div className = "flex flex-row mt-10 gap-30 justify-center items-center">
@@ -67,6 +68,7 @@ function Home() {
                 />
             </div>
         </div>
+        <CardStrip items = {items} />
 
         
 
@@ -75,5 +77,6 @@ function Home() {
     )
 
 }
+
 
 export default Home;
