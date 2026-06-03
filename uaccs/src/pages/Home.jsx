@@ -1,5 +1,6 @@
 import {NavLink} from 'react-router-dom'
 import {ArrowRight, School, Shapes, Backpack} from 'lucide-react'
+import CardStrip from '../components/CardStrip'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
@@ -34,7 +35,6 @@ function Home() {
     return (
     <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <div className = "flex flex-row mt-10 gap-30 justify-center items-center">
-
             <div className = "w-1/3 flex flex-col gap-6">
                 <h1 className = "font-nunito font-bold text-7xl text-[#5BA4B5]">
                     Your Child's Journey Begins Here
@@ -71,7 +71,6 @@ function Home() {
 
                 </div>
             </div>
-
             <div className = "flex shadow-2xl">
                 <img 
                     src = "/test_img.jpg" 
@@ -79,27 +78,10 @@ function Home() {
                     className = "w-145 pointer-events-none h-150 rounded-lg object-cover"
                 />
             </div>
-
-
         </div>
 
-        <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
-          {programs.map((program, index) => {
+        
 
-            const Icon = program.icon
-            return (
-                <div 
-                key = {index} 
-                className = {`bg-white h-64 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between ${program.borderColor} ${program.textColor} ${program.shadowColor}`}>
-                    <h3 className = "font-uaccs text-3xl" >{program.title}</h3>
-                    <Icon size = {36} />
-                    <div className = "text-gray-700 font-extralight text-[18px] font-schoolbell">
-                        {program.ages}
-                    </div>
-                </div>
-            )
-          })}  
-        </div>
         
     </div>
     )
