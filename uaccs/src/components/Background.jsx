@@ -55,7 +55,7 @@ function Background() {
 
 
     return (
-        <div className = "fixed inset-0 pointer-events-none z-0 bg-[#F5F9FA] overflow-hidden ">
+        <div className = "absolute inset-0 pointer-events-none z-0 bg-[#F5F9FA] overflow-hidden ">
             {elements}
         </div>
     );
