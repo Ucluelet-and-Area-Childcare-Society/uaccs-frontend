@@ -1,34 +1,22 @@
 import {NavLink} from 'react-router-dom'
-import {ArrowRight, School, Shapes, Backpack} from 'lucide-react'
+import {ArrowRight, Shield, GraduationCap, Heart, Leaf} from 'lucide-react'
 import CardStrip from '../components/CardStrip'
 
 /* Home page with CTA, programs intro, photo, calendar, slogan */
 function Home() {
-    const programs = [
+    const items = [
         {
-            title: "Ucluelet Children's Centre",
-            icon: Backpack,
-            ages: "Ages: 0 - 12 years",
-            textColor: "text-[#5BA4B5]",
-            borderColor: "border-[#5BA4B5]",
-            shadowColor: "shadow-uaccs_blue"
+            icon: Shield, title: "Safe & Licensed", subtext: "some subtext here...", color: "#4A8A9A"
         },
         {
-            title: "Little Beans Infant Toddler Centre",
-            icon: Shapes,
-            ages: "Ages: 0 - 36 months",
-            textColor: "text-uaccs_green ",
-            borderColor: "border-uaccs_green",
-            shadowColor: "shadow-[#A8BA4E]"
+            icon: GraduationCap, title: "Qualified Staff", subtext: "more subtext here", color: "#C4D65E"
         },
         {
-            title: "After-school Care",
-            icon: School,
-            ages: "Ages: 5 - 12 years",
-            textColor: "text-uaccs_orange",
-            borderColor: "border-uaccs_orange",
-            shadowColor: "shadow-[#D89350]"
-        }
+            icon: Heart, title: "Caring Environment", subtext: "more subtext yet again", color: "#E8A562"
+        },
+        {
+            icon: Leaf, title: "Community Focused", subtext: "blah blah blah", color: "#C4D65E"
+        },
 
     ]
 
