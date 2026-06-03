@@ -16,8 +16,8 @@ function CardStrip({items}) {
                 <div 
                 key = {index} 
                 className = {`bg-white h-52 border-6 border-solid py-5 shadow-custom_shadow flex flex-col items-center justify-between rounded-lg hover:-translate-y-2 hover:shadow-2xl hover:scale-102 duration-300 ease-in-out ${item.color}`}>
-                    <Icon size = {36} />
-                    <h3 className = "text-2xl" >{item.title}</h3>
+                    <div className = {`w-14 h-14 rounded-full flex items-center justify-center ${item.background} opacity-75`}>{item.icon}</div>
+                    <h3 className = "text-2xl font-semibold font-nunito" >{item.title}</h3>
                     <div className = "text-gray-700 font-extralight text-[18px] ">
                         {item.subtext}
                     </div>
