@@ -36,13 +36,11 @@ function Home() {
         <div className = "flex flex-row mt-10 gap-30 justify-center">
 
             <div className = "w-1/3 flex flex-col gap-9">
-                <h2 className = "font-nunito font-bold text-6xl text-[#5BA4B5]">
+                <h1 className = "font-nunito font-bold text-6xl text-[#5BA4B5]">
                     Your Child's Journey Begins Here
-                </h2>
-                <p className = "text-justify opacity-75 text-gray-700 tracking-wide leading-6 font-uaccs text-2xl">
-                    At UACCS, we believe that every child deserves the opportunity to thrive, 
-                    and it is our privilege and honour to play a part in shaping a brighter future 
-                    for the next generation of Ucluelet residents. 
+                </h1>
+                <p className = "text-justify opacity-75 mt-5 tracking-wide text-xl font-semibold">
+                    Affordable · Inclusive · Nurturing
                 </p>
                 <NavLink 
                     to = "/waitlist" 
@@ -52,21 +50,17 @@ function Home() {
                 </NavLink>
             </div>
 
-            <div className = "">
+            <div className = "flex shadow-2xl">
                 <img 
                     src = "/test_img.jpg" 
                     alt = "test image" 
-                    width = "550" 
-                    height = "700" 
-                    className = "pointer-events-none object-cover"
+                    className = "w-140 pointer-events-none h-150 rounded-lg object-cover"
                 />
             </div>
 
 
-
-
-
         </div>
+
         <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
           {programs.map((program, index) => {
 
