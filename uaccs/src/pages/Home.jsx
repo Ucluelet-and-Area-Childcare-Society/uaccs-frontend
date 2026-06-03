@@ -38,30 +38,31 @@ const items = [
 function Home() {
     
     return (
-    <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
-        <div className = "flex flex-row mt-10 gap-30 justify-center items-center">
-            <div className = "max-w-lg flex flex-col gap-6">
+    <div className = "flex flex-col items-center p-10 mx-auto z-0 max-w-7xl">
+
+        <div className = "flex flex-row mt-10 items-center">
+            
+            <div className = "flex flex-col gap-6">
                 <h1 className = "font-nunito font-bold text-7xl text-[#5BA4B5]">
                     Your Child's Journey Begins Here
                 </h1>
-                <p className = "text-justify text-[#5B6820] opacity-75 p-4 tracking-wide text-xl font-semibold">
+                <p className = "text-justify text-[#5B6820] opacity-75 p-4 tracking-wide text-2xl font-semibold">
                     Affordable · Inclusive · Nurturing
                 </p>
-                <div className = "flex flex-row gap-4 w-full">
+                <div className = "flex flex-row gap-5">
                     <NavLink 
                     to = "/waitlist" 
-                    className = "rounded-md flex items-center w-1/2 justify-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                    className = "rounded-md flex items-center justify-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                         Join Our Waitlist
                         <ArrowRight/>
                     </NavLink>
                     <NavLink
-                    to = "/about/who-we-are"
-                    className = "rounded-md justify-center flex items-center w-1/2 gap-1 p-5 bg-uaccs_orange border-3 border-solid  border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                    className = "rounded-md justify-center flex items-center gap-1 p-5 px-10 bg-uaccs_orange border-3 border-solid  border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                         Learn More
                         <ArrowRight/>
                     </NavLink>
                 </div>
-                <div className = "flex gap-10 mt-10">
+                <div className = "flex gap-15 mt-10">
                     {[
                         {value: "20+", label: "Years of Care"},
                         {value: "$10", label: "Per Day Rate"},
@@ -76,50 +77,16 @@ function Home() {
 
                 </div>
             </div>
+
             <div className = "flex shadow-2xl">
                 <img 
                     src = "/test_img.jpg" 
                     alt = "test image" 
-                    className = "w-145 pointer-events-none select-none h-150 rounded-lg object-cover"
+                    className = "pointer-events-none select-none h-150 rounded-lg object-cover"
                 />
             </div>
         </div>
-
         <CardStrip items = {items} />
-
-        <section className = "mt-20 rounded-lg max-w-6xl w-full">
-            <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center">Why Parents Choose Us</h2>
-            <div className = "flex flex-row items-center justify-between">
-                <div className = "flex flex-col gap-10 max-w-lg ">
-                    <div className = "mt-5 px-6 py-4 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white w-1/2">
-                        💰 Just $10/day!
-                    </div>
-                    <h3 className = "font-nunito font-bold text-2xl text-[#264D57]">
-                        Affordable, Inclusive, Safe, and Nurturing childcare for every family
-                    </h3>
-                    <p className = "text-justify leading-relaxed">
-                        At UACCS, we believe every child deserves a nurturing, 
-                        high-quality early education — regardless of family income. 
-                        Our $10/day BC Affordable Child Care Benefit rate means you never have 
-                        to choose between work and your child's wellbeing.
-                    </p>
-                    <p className = "text-justify leading-relaxed">
-                        It is our privilege and honour to play a part 
-                        in shaping a brighter future for the next generation of 
-                        Ucluelet residents. 
-                    </p>
-                    <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1 bg-uaccs_blue w-1/3 p-4 rounded-full text-white font-nunito duration-200 transition-all hover:shadow-xl hover:translate-x-1 hover:-translate-y-1">
-                        Learn More
-                        <ArrowRight/>
-                    </NavLink>
-                </div>
-
-            </div>
-
-        </section>
-        
-
-        
     </div>
     )
 
