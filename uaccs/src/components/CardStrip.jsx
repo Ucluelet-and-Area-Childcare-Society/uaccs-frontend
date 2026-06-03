@@ -1,5 +1,11 @@
 /* Card strip component to display info on floating cards */
 function CardStrip({items}) {
+    /* items with the following attributes:
+        - Icon
+        - Color scheme
+        - Title
+        - Subtext
+    */
 
     return (
         <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
