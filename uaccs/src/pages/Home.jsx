@@ -90,9 +90,9 @@ function Home() {
 
         <section className = "mt-20 rounded-lg">
             <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center mb-10">Why Parents Choose Us</h2>
-            <div className = "flex flex-row items-center gap-10">
+            <div className = "flex flex-row items-center gap-15">
                 <div className = "flex flex-col gap-10 w-1/2">
-                    <div className = "mt-5 px-6 py-3 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white">
+                    <div className = "mt-5 px-6 py-3 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white w-fit">
                         💰 Just $10/day!
                     </div>
                     <h3 className = "font-nunito font-bold text-2xl text-[#264D57]">
@@ -109,12 +109,12 @@ function Home() {
                         in shaping a brighter future for the next generation of 
                         Ucluelet residents. 
                     </p>
-                    <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1 bg-uaccs_blue p-4 rounded-full text-white font-nunito duration-200 transition-all hover:shadow-xl hover:translate-x-1 hover:-translate-y-1">
+                    <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1 bg-uaccs_blue px-6 py-4 rounded-full text-white font-nunito duration-200 transition-all hover:shadow-xl hover:translate-x-1 hover:-translate-y-1 w-fit">
                         Learn More
                         <ArrowRight/>
                     </NavLink>
                 </div>
-                <div className = "">
+                <div className = "w-1/2">
                     <img 
                         src = "/test_img.jpg" 
                         alt = "test image" 
