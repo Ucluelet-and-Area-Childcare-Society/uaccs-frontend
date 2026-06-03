@@ -39,20 +39,20 @@ function Home() {
                 <h1 className = "font-nunito font-bold text-7xl text-[#5BA4B5]">
                     Your Child's Journey Begins Here
                 </h1>
-                <p className = "text-justify opacity-75 p-4 tracking-wide text-xl font-semibold">
+                <p className = "text-justify text-[#5B6820] opacity-75 p-4 tracking-wide text-xl font-semibold">
                     Affordable · Inclusive · Nurturing
                 </p>
-                <div className = "flex flex-row gap-4 justify-between">
+                <div className = "flex flex-row gap-4 w-full">
                     <NavLink 
                     to = "/waitlist" 
-                    className = "rounded-md flex items-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                    className = "rounded-md flex items-center w-1/2 justify-center gap-1 p-5 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                         Join Our Waitlist
                         <ArrowRight/>
                     </NavLink>
                     <NavLink
                     to = "/about/who-we-are"
-                    className = "rounded-md flex items-center gap-1 p-5 bg-uaccs_orange border-3 border-solid  border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
-                        Learn More About Us
+                    className = "rounded-md justify-center flex items-center w-1/2 gap-1 p-5 bg-uaccs_orange border-3 border-solid  border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                        Learn More
                         <ArrowRight/>
                     </NavLink>
                 </div>
@@ -67,7 +67,6 @@ function Home() {
                             <div className = "text-md text-black">{stat.label}</div>
 
                         </div>
-
                     ))}
 
                 </div>
