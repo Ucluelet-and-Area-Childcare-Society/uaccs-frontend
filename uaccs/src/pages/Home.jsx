@@ -80,12 +80,12 @@ function Home() {
                 <img 
                     src = "/test_img.jpg" 
                     alt = "test image" 
-                    className = "w-145 pointer-events-none h-150 rounded-lg object-cover"
+                    className = "w-145 pointer-events-none select-none h-150 rounded-lg object-cover"
                 />
             </div>
         </div>
         <CardStrip items = {items} />
-
+        <h2 className = "mt-20 text-4xl font-nunito font-bold text-uaccs_blue">Why Parents Choose Us</h2>
         
 
         
