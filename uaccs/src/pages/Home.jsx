@@ -4,16 +4,16 @@ import CardStrip from '../components/CardStrip'
 
 const items = [
         {
-            icon: Shield, title: "Safe & Licensed", subtext: "some subtext here...", color: "#4A8A9A"
+            icon: Shield, title: "Safe & Licensed", subtext: "some subtext here...", color: "border-[#5BA4B5] shadow-[#4A8A9A]"
         },
         {
-            icon: GraduationCap, title: "Qualified Staff", subtext: "more subtext here", color: "#C4D65E"
+            icon: GraduationCap, title: "Qualified Staff", subtext: "more subtext here", color: "border-[#C4D65E] shadow-[#B5C254]"
         },
         {
-            icon: Heart, title: "Caring Environment", subtext: "more subtext yet again", color: "#E8A562"
+            icon: Heart, title: "Caring Environment", subtext: "more subtext yet again", color: "border-[#E8A562] shadow-[#D89350]"
         },
         {
-            icon: Leaf, title: "Community Focused", subtext: "blah blah blah", color: "#C4D65E"
+            icon: Leaf, title: "Community Focused", subtext: "blah blah blah", color: "border-[#C4D65E] shadow-[#B5C254]"
         },
 
     ]
