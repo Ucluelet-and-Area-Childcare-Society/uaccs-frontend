@@ -88,10 +88,10 @@ function Home() {
         </div>
         <CardStrip items = {items} />
 
-        <section className = "mt-20 rounded-lg mb-10">
-            <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center">Why Parents Choose Us</h2>
-            <div className = "flex flex-row items-center justify-between">
-                <div className = "flex flex-col gap-10">
+        <section className = "mt-20 rounded-lg">
+            <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center mb-10">Why Parents Choose Us</h2>
+            <div className = "flex flex-row items-center gap-10">
+                <div className = "flex flex-col gap-10 w-1/2">
                     <div className = "mt-5 px-6 py-3 rounded-2xl text-2xl font-black font-nunito bg-uaccs_orange text-white">
                         💰 Just $10/day!
                     </div>
@@ -114,6 +114,14 @@ function Home() {
                         <ArrowRight/>
                     </NavLink>
                 </div>
+                <div className = "">
+                    <img 
+                        src = "/test_img.jpg" 
+                        alt = "test image" 
+                        className = "pointer-events-none select-none h-100 rounded-lg object-cover"
+                    />
+                </div>
+                
             </div>
 
         </section>
