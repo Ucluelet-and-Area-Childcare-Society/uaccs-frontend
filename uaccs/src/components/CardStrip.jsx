@@ -8,14 +8,14 @@ function CardStrip({items}) {
     */
 
     return (
-        <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center text-2xl rounded-md">
+        <div className = "grid grid-cols-4 grid-rows-1 max-w-6xl gap-10 w-full mt-20 text-center text-2xl rounded-md">
           {items.map((item, index) => {
 
-            const Icon = program.icon
+            const Icon = item.icon
             return (
                 <div 
                 key = {index} 
-                className = {`bg-white h-64 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between ${program.borderColor} ${program.textColor} ${program.shadowColor}`}>
+                className = {`bg-white h-52 border-6 py-5 shadow-custom_shadow flex flex-col items-center justify-between rounded-md`}>
                     <Icon size = {36} />
                     <h3 className = "font-uaccs text-3xl" >{item.title}</h3>
                     <div className = "text-gray-700 font-extralight text-[18px] ">
