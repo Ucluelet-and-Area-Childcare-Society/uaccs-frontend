@@ -40,7 +40,7 @@ function Home() {
     return (
     <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
         <div className = "flex flex-row mt-10 gap-30 justify-center items-center">
-            <div className = "w-1/3 flex flex-col gap-6">
+            <div className = "max-w-lg flex flex-col gap-6">
                 <h1 className = "font-nunito font-bold text-7xl text-[#5BA4B5]">
                     Your Child's Journey Begins Here
                 </h1>
@@ -85,7 +85,10 @@ function Home() {
             </div>
         </div>
         <CardStrip items = {items} />
-        <h2 className = "mt-20 text-4xl font-nunito font-bold text-uaccs_blue">Why Parents Choose Us</h2>
+        <section className = "mt-20 rounded-lg py-10 w-full h-full">
+            <h2 className = "text-4xl font-nunito font-bold text-uaccs_blue text-center h-[200vh]">Why Parents Choose Us</h2>
+            
+        </section>
         
 
         
