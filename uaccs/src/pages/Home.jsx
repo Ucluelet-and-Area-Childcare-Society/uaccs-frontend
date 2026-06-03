@@ -33,24 +33,20 @@ function Home() {
 
     return (
     <div className = "flex flex-col items-center p-10 mx-auto z-0 w-full">
-        <h1 className = "font-uaccs font-bold text-[#A8BA4E] text-[50px]">
-            Committed to providing affordable, inclusive, safe, and nurturing childcare.
-        </h1>
-        <div className = "flex flex-row mt-20 gap-30 justify-center">
+        <div className = "flex flex-row mt-10 gap-30 justify-center">
 
-
-            <div className = "mt-10 w-1/3 flex flex-col gap-9">
-                <h2 className = "font-uaccs font-semibold text-5xl text-[#5BA4B5]">
-                    $10/day Daycare
+            <div className = "w-1/3 flex flex-col gap-9">
+                <h2 className = "font-nunito font-bold text-6xl text-[#5BA4B5]">
+                    Your Child's Journey Begins Here
                 </h2>
-                <p className = "text-justify opacity-75 text-gray-700 tracking-wide leading-6 font-schoolbell text-2xl">
+                <p className = "text-justify opacity-75 text-gray-700 tracking-wide leading-6 font-uaccs text-2xl">
                     At UACCS, we believe that every child deserves the opportunity to thrive, 
                     and it is our privilege and honour to play a part in shaping a brighter future 
                     for the next generation of Ucluelet residents. 
                 </p>
                 <NavLink 
                     to = "/waitlist" 
-                    className = "font-schoolbell flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
+                    className = "font-schoolbell rounded-md flex items-center gap-0.5 p-4 w-1/2 bg-uaccs_orange border-3 border-solid border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                     Join Our Waitlist
                     <ArrowRight/>
                 </NavLink>
