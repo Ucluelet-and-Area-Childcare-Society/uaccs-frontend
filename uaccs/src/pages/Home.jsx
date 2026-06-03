@@ -95,9 +95,17 @@ function Home() {
                     Affordable, Inclusive, Safe, and Nurturing childcare for every family
                 </h3>
                 <p className = "text-justify">
-                    random filler text here.....
+                    At UACCS, we believe every child deserves a nurturing, 
+                    high-quality early education — regardless of family income. 
+                    Our $10/day BC Affordable Child Care Benefit rate means you never have 
+                    to choose between work and your child's wellbeing.
                 </p>
-                <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1">
+                <p className = "text-justify">
+                    It is our privilege and honour to play a part 
+                    in shaping a brighter future for the next generation of 
+                    Ucluelet residents. 
+                </p>
+                <NavLink to = "/about/who-we-are" className = "flex flex-row gap-1 bg-uaccs_blue w-1/4 p-4 rounded-full text-white font-nunito duration-200 transition-all hover:shadow-xl hover:translate-x-1 hover:-translate-y-1">
                     Learn More
                     <ArrowRight/>
                 </NavLink>
