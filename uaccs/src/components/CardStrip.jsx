@@ -1,4 +1,4 @@
-
+/* Card strip component to display info on floating cards */
 function CardStrip({items}) {
 
     return (
