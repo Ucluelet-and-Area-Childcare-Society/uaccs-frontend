@@ -38,20 +38,6 @@ function Home() {
         </h1>
         <div className = "flex flex-row mt-20 gap-30 justify-center">
 
-            <div className = "">
-
-
-                <img 
-                    src = "/test_img.jpg" 
-                    alt = "test image" 
-                    width = "550" 
-                    height = "550" 
-                    className = "pointer-events-none object-cover"
-                />
-            </div>
-
-
-
 
             <div className = "mt-10 w-1/3 flex flex-col gap-9">
                 <h2 className = "font-uaccs font-semibold text-5xl text-[#5BA4B5]">
@@ -69,6 +55,21 @@ function Home() {
                     <ArrowRight/>
                 </NavLink>
             </div>
+
+            <div className = "">
+                <img 
+                    src = "/test_img.jpg" 
+                    alt = "test image" 
+                    width = "550" 
+                    height = "700" 
+                    className = "pointer-events-none object-cover"
+                />
+            </div>
+
+
+
+
+
         </div>
         <div className = "grid grid-cols-3 grid-rows-1 max-w-6xl gap-15 w-full mt-20 text-center font-dancing text-2xl">
           {programs.map((program, index) => {
