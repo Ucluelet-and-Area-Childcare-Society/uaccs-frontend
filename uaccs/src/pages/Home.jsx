@@ -1,6 +1,7 @@
 import {NavLink} from 'react-router-dom'
 import {ArrowRight} from 'lucide-react'
 import CardStrip from '../components/CardStrip'
+import Background from '../components/Background'
 
 const items = [
         {
@@ -39,7 +40,6 @@ function Home() {
     
     return (
     <div className = "flex flex-col items-center p-10 mx-auto z-0 max-w-7xl">
-
         <div className = "flex flex-row mt-10 items-center">
             
             <div className = "flex flex-col gap-6">
@@ -57,6 +57,7 @@ function Home() {
                         <ArrowRight/>
                     </NavLink>
                     <NavLink
+                    to = "/about/who-we-are"
                     className = "rounded-md justify-center flex items-center gap-1 p-5 px-10 bg-uaccs_orange border-3 border-solid  border-[#D89350] text-white shadow-custom_shadow shadow-[#D89350] transition-all duration-200 hover:translate-y-1 hover:border-b-0 hover:border-r-0">
                         Learn More
                         <ArrowRight/>
@@ -74,8 +75,8 @@ function Home() {
 
                         </div>
                     ))}
-
                 </div>
+
             </div>
 
             <div className = "flex shadow-2xl">
