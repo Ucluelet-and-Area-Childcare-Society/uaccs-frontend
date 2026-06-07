@@ -92,12 +92,12 @@ function Home() {
           </div>
           <CardStrip items={items} />
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-12 bg-linear-to-b from-[##F5F9FA] to-[#D4E8EC]" />
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-b from-[##F5F9FA] to-[#D4E8EC]" />
       </div>
 
       <div className="relative w-full overflow-hidden bg-[#D4E8EC]">
         <div className="flex flex-col items-center p-10 mx-auto z-0 max-w-7xl">
-          <section className="mt-5 rounded-lg">
+          <section className="rounded-lg">
             <h2 className="text-4xl font-nunito font-bold text-uaccs_blue text-center mb-10">
               Why Parents Choose Us
             </h2>
