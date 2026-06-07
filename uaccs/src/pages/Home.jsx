@@ -128,12 +128,13 @@ function Home() {
                   <ArrowRight />
                 </NavLink>
               </div>
-              <div className="w-1/2">
+              <div className="w-1/2 inline-block rotate-2">
                 <img
                   src="/test_img.jpg"
                   alt="test image"
-                  className="pointer-events-none select-none h-100 rounded-lg object-cover"
+                  className="pointer-events-none select-none h-100 rounded-lg object-cover border-8 border-white shadow-2xl"
                 />
+                <div className = "absolute -inset-1 -z-10 rounded-lg bg-uaccs_orange -rotate-4"/>
               </div>
             </div>
           </section>
