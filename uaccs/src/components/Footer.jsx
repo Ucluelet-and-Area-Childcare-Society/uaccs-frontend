@@ -13,7 +13,7 @@ function Footer() {
                 <svg
                 viewBox="0 0 1440 320"
                 preserveAspectRatio='none'
-                className = "w-full h-30" 
+                className = "w-full h-32" 
                 >
                     <path 
                     fill="#E8A562" 
