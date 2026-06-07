@@ -13,7 +13,7 @@ function CardStrip({items}) {
             return (
                 <div 
                 key = {index} 
-                className = {`bg-white h-52 border-6 border-solid py-5 shadow-custom_shadow flex flex-col items-center justify-between rounded-lg hover:-translate-y-2 hover:shadow-2xl hover:scale-102 duration-300 ease-in-out ${item.color}`}>
+                className = {`bg-white h-52 border-6 border-solid py-5 shadow-custom_shadow flex flex-col items-center justify-between rounded-lg hover:-translate-y-2 hover:shadow-xl hover:scale-102 duration-300 ease-in-out ${item.color}`}>
                     <div className = {`w-15 h-15 rounded-full flex items-center justify-center ${item.background} opacity-75`}>{item.icon}</div>
                     <h3 className = "text-2xl font-semibold font-nunito" >{item.title}</h3>
                     <div className = "text-gray-700 font-extralight text-[14px] ">
