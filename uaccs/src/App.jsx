@@ -19,7 +19,6 @@ function App() {
 
   return (
    <div className = "min-h-screen w-full flex flex-col relative">
-    <Background/>
     <Header/>
     <main className = "flex-1 relative z-10">
         <Routes>
