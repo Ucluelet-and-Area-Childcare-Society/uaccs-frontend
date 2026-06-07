@@ -98,7 +98,7 @@ function Home() {
       <div className="relative w-full overflow-hidden bg-[#D4E8EC]">
         <div className="flex flex-col items-center p-10 mx-auto z-0 max-w-7xl">
           <section className="rounded-lg">
-            <h2 className="text-4xl font-nunito font-bold text-uaccs_blue text-center mb-10">
+            <h2 className="text-6xl font-nunito font-extrabold text-uaccs_blue text-center mb-10">
               Why Parents Choose Us
             </h2>
             <div className="flex flex-row items-center gap-15">
