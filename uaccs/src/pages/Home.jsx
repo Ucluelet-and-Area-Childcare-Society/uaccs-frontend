@@ -140,6 +140,7 @@ function Home() {
           </section>
         </div>
       </div>
+      {/* Next Section Here */}
     </>
   );
 }
