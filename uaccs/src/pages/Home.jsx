@@ -134,7 +134,7 @@ function Home() {
                   alt="test image"
                   className="pointer-events-none select-none h-100 rounded-lg object-cover border-8 border-white shadow-2xl"
                 />
-                <div className = "absolute -inset-1 -z-10 rounded-lg bg-uaccs_orange -rotate-4"/>
+                <div className="absolute -inset-1 -z-10 rounded-lg bg-uaccs_orange -rotate-4" />
               </div>
             </div>
           </section>
