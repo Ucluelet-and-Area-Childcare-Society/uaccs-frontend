@@ -36,7 +36,7 @@ function Header() {
                 <svg
                 viewBox="0 0 1440 320"
                 preserveAspectRatio='none'
-                className = "w-full h-30" 
+                className = "w-full h-34" 
                 >
                     <path 
                     fill="#4A8A9A" 
