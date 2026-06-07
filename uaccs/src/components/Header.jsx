@@ -24,7 +24,7 @@ function Header() {
                 <img src = {Umbrella} alt = "Umbrella Logo" className= "w-16 h-16 "/>
             </NavLink>
 
-            <nav className = "flex items-center gap-7 text-white font-schoolbell text-md">
+            <nav className = "flex items-center gap-7 text-white font-uaccs text-xl">
                 <DropdownMenu label = "About" items = {aboutLinks} />
                 {navLinks.map((link) => (
                     <NavLink key = {link.to} to = {link.to} className = 'transition-all duration-300 ease-in-out hover:text-uaccs_green hover:-translate-y-1'> {link.label} </NavLink>
